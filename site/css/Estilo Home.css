@@ -1,0 +1,65 @@
+/*
+p {
+    color: darkgreen;
+    font-family: cursive;
+    font-size:50px;
+    /*background-color: yellow*/;
+}
+/*
+.clase {
+    color: red;
+    font-size:50px;
+}
+
+a{
+    text-decoration: none;
+    color: aqua;
+}
+
+body {
+    background-image: url('http://top1walls.com/walls/space/space-lights-stars-galaxies-bright-1517752-1680x1050.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+div{
+    background-color: darkblue;
+    border: 6px solid yellow ;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+    float: right;
+}
+
+header{
+    color: white;
+}
+
+section {
+    float: left;
+    margin: 10px;
+    width: 600px;
+    background-color: aliceblue;
+}
+
+aside {
+    float: right;
+    margin: 10px;
+    width: 320px;
+}
+
+footer {
+    clear: both;
+}
+*/
+.menu{
+    color: darkred;
+    float: left;
+}
