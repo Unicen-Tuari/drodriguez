@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MTB</title>
+    <link rel="stylesheet" href="css/estilo_home.css"
+</head>
+<body>
+<header>
+
+</header>
+
+<div>
+
+    <nav>
+        <ul >
+            <li><a href="Index.html"> Home </a></li>
+            <li><a href="Circuitos.html"> Circuitos </a></li>
+            <li><a href="Eventos.html"> Eventos </a></li>
+            <li><a href="Productos.html"> Productos </a></li>
+            <li><a href="Registro.html"> Registro </a></li>
+        </ul>
+    </nav>
+
+    <form class="formEstilo">
+        <p>Nombre: <br> <input type="text" name="Nombre" autofocus placeholder="Diego" required> (*) </p>
+        <p>Apellido: <br> <input type="text" name="Apellido" placeholder="Rodriguez" required> (*) </p>
+        <p>Nombre de Usuario: <br> <input type="text" name="NombreUsuario" required> (*) </p>
+        <p>Contraseña: <br> <input type="password" name="contrasenia" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> (*) </p>
+        <p>Repita contraseña: <br> <input type="password" name="contrasenia" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> (*) </p>
+        <p>Email: <br> <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="diego22@gmail.com" required> (*) </p>
+        <p class="labelregistro"><label>Los campos marcado con un asterísco (*) son obligatorios</label></p>
+        <input class="imputenviar" type="submit" value="Enviar">
+
+</div>
+
+
+</body>
+</html>
