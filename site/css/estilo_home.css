@@ -7,8 +7,13 @@ header{
 
 }
 
+header tr td a{
+    text-decoration: none;
+    color:#00ff00;
+}
+
 header label{
-    color: grey;
+    color: #6aa444;
 }
 
 
@@ -28,28 +33,32 @@ a img{
 
 nav a{
     text-decoration: none;
-    border: 1px solid cyan;
+    /*border: 2px solid grey;*/
     /*background-color: crimson;*/
     /*padding: 15px 53px;*/
-    padding-right: 44px;
-    padding-left: 44px;
+    padding-right: 51px;
+    padding-left: 51px;
     font-size: 22px;
+    color: white;
 }
 
 nav a:hover{
-    background-color: aquamarine;
-    color: azure;
+    background-color: #0b2310;
+    color: white;
 }
 
 
 nav{
     height: 27px;
-    width: 900px;
+    width: 898px;
     /*margin: auto auto;*/
     /*background: rgba(200, 54, 54, 1);*/
     margin-top: -15px;
-    border-radius: 3px;
     background-color: #6aa444;
+}
+
+nav ul{
+    -webkit-padding-start: 0px;
 }
 
 nav ul li{
@@ -66,9 +75,14 @@ header form{
     float: right;
 }
 
-header img{
+.headerimglogo{
     width: 20%;
     float: left;
+}
+
+header img{
+    float: right;
+    width: 3%;
 }
 
 article{
@@ -77,21 +91,12 @@ article{
     background-color: white;
     margin: auto auto;
     overflow: scroll;
+    overflow-x: hidden;
     float: left;
     border-radius: 10px;
     /*border: 5px solid black;*/
 }
 
-aside{
-    float: right;
-    width: 300px;
-    height: 650px;
-    margin-right: 28px;
-    margin-top: 15px;
-    /*border: 5px solid black;*/
-    background-color: #f5f5f5;
-    border-radius: 10px;
-}
 
 .home{
     float: left;
@@ -122,6 +127,8 @@ aside div h1{
 }
 
 footer {
+    margin: auto auto;
+    width: 900px;
     height: 35px;
     /*float: right;*/
     clear: both;
@@ -129,11 +136,20 @@ footer {
 
 footer ul li{
     float: left;
+    color: #6aa444;
+    padding: 0 46px 0 46px;
+    border-right: 1px solid;
+    margin: 3px 0 3px 0;
+}
+
+.sinbordeultimo{
+    border: none;
 }
 
 footer div{
     margin-top: -15.5px;
     height: 35px;
+    width: 899px;
 }
 
 .formEstilo{
@@ -165,9 +181,17 @@ form p{
 }
 
 .divhome{
+    background-color: grey;
+    height: 709px;
+    width: 898px;
+    margin: auto auto;
+    border-radius: 10px;
+}
+
+.divotros{
     background-color: white;
     height: 709px;
-    width: 900px;
+    width: 898px;
     margin: auto auto;
     border-radius: 10px;
 }
@@ -177,13 +201,26 @@ form p{
     height: 50px;
     width: 200px;
 }
+
 h1{
     text-align: center;
-    background-color: grey;
+    background-color: black;
+    color: white;
 }
 
 .sectionhome{
     height: 220px;
+}
+
+aside{
+    float: right;
+    width: 300px;
+    height: 650px;
+    margin-right: 24px;
+    margin-top: 15px;
+    /*border: 5px solid black;*/
+    background-color: #f5f5f5;
+    border-radius: 10px;
 }
 
 aside div{
@@ -211,6 +248,65 @@ aside div img{
     margin-left: 90px;
 }
 
+.columnabusqueda{
+    width: 220px;
+    height: 510px;
+    background-color: white;
+    margin: auto auto;
+    float: left;
+    border-right: 1px solid #6aa444;
+    border-bottom: 1px solid #6aa444;
+}
+
+.circuito{
+    float: left;
+    height: 280px;
+    width: 675px;
+    border-bottom: 2px dashed #6aa444;
+    overflow-x: none;
+}
+
+
+.sinbordeultimocircuito{
+    float: right;
+    height: 240px;
+    width: 610px;
+}
+
+.listacircuitos{
+    overflow-x: hidden;
+    height: 675px;
+    /*overflow-y: hidden;*/
+}
+
+.transparencia{
+    opacity: 0.5;
+}
+
+.imgcircuito{
+    float: left;
+    width: 140px;
+    height: 130px;
+}
+
+.marcasproductos{
+    float: left;
+}
+
+.marcasproductos img{
+    height: 95px;
+    opacity: 0.5;
+    border: 2px solid transparent;
+}
+
+.marcasproductos img:hover{
+    border: 2px solid #6aa444;
+    opacity: 1;
+}
+
+.sectionproducto{
+    height: 515px;
+}
 
 
 /*form label{
