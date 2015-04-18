@@ -24,10 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-31.5" vertical-offset="0" max-vertical-offset="3024">
+            <state vertical-scroll-proportion="1.6434783" vertical-offset="0" max-vertical-offset="3024">
               <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
@@ -37,8 +37,8 @@
       <file leaf-file-name="estilo_home.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/css/estilo_home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6804" max-vertical-offset="11256">
-              <caret line="340" column="6" selection-start-line="340" selection-start-column="6" selection-end-line="340" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="7182">
+              <caret line="143" column="32" selection-start-line="143" selection-start-column="32" selection-end-line="143" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -47,7 +47,7 @@
       <file leaf-file-name="Circuitos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Circuitos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.066668" vertical-offset="1987" max-vertical-offset="3171">
+            <state vertical-scroll-proportion="-5.1666665" vertical-offset="2344" max-vertical-offset="3171">
               <caret line="119" column="41" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
               <folding />
             </state>
@@ -57,17 +57,17 @@
       <file leaf-file-name="Registro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Registro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="1785">
+            <state vertical-scroll-proportion="3.5" vertical-offset="1008" max-vertical-offset="1785">
               <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Eventos.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Eventos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Eventos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7304348" vertical-offset="861" max-vertical-offset="1743">
+            <state vertical-scroll-proportion="-35.0" vertical-offset="231" max-vertical-offset="1743">
               <caret line="61" column="833" selection-start-line="61" selection-start-column="833" selection-end-line="61" selection-end-column="833" />
               <folding />
             </state>
@@ -101,8 +101,8 @@
         <option value="$PROJECT_DIR$/site/Productos.html" />
         <option value="$PROJECT_DIR$/site/Index.html" />
         <option value="$PROJECT_DIR$/site/Circuitos.html" />
-        <option value="$PROJECT_DIR$/site/css/estilo_home.css" />
         <option value="$PROJECT_DIR$/site/Eventos.html" />
+        <option value="$PROJECT_DIR$/site/css/estilo_home.css" />
       </list>
     </option>
   </component>
@@ -626,9 +626,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/site/Eventos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-35.0" vertical-offset="231" max-vertical-offset="1743">
+          <caret line="61" column="833" selection-start-line="61" selection-start-column="833" selection-end-line="61" selection-end-column="833" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/site/Registro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="1785">
+        <state vertical-scroll-proportion="3.5" vertical-offset="1008" max-vertical-offset="1785">
           <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
           <folding />
         </state>
@@ -636,32 +644,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Circuitos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.066668" vertical-offset="1987" max-vertical-offset="3171">
+        <state vertical-scroll-proportion="-5.1666665" vertical-offset="2344" max-vertical-offset="3171">
           <caret line="119" column="41" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/Index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.5" vertical-offset="0" max-vertical-offset="3024">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/css/estilo_home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6804" max-vertical-offset="11256">
-          <caret line="340" column="6" selection-start-line="340" selection-start-column="6" selection-end-line="340" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="7182">
+          <caret line="143" column="32" selection-start-line="143" selection-start-column="32" selection-end-line="143" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Eventos.html">
+    <entry file="file://$PROJECT_DIR$/site/Index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7304348" vertical-offset="861" max-vertical-offset="1743">
-          <caret line="61" column="833" selection-start-line="61" selection-start-column="833" selection-end-line="61" selection-end-column="833" />
+        <state vertical-scroll-proportion="1.6434783" vertical-offset="0" max-vertical-offset="3024">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>

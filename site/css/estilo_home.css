@@ -1,10 +1,10 @@
+/*-------------------------------HEADER----------------------------------*/
 header{
     height: 150px;
     width: 900px;
     margin: auto auto;
     background-color: black;
     /*background: rgba(255, 255, 255, 1);*/
-
 }
 
 header tr td a{
@@ -16,26 +16,34 @@ header label{
     color: #6aa444;
 }
 
+header form{
+    float: right;
+}
 
-body{/*
-    background-image: url("images/fondo3.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;*/
+header img{
+    float: right;
+    width: 3%;
+}
+
+.headerimglogo{
+    width: 20%;
+    float: left;
+}
+
+body{
     background-color: black;
 }
 
-a img{
-    border-radius: 10px;
-    /*border: 5px solid yellow;*/
-    margin: 10px 10px 10px 10px;
-
+nav{
+    height: 27px;
+    width: 898px;
+    /*background: rgba(200, 54, 54, 1);*/
+    margin-top: -15px;
+    background-color: #6aa444;
 }
 
 nav a{
     text-decoration: none;
-    /*border: 2px solid grey;*/
-    /*background-color: crimson;*/
-    /*padding: 15px 53px;*/
     padding-right: 72px;
     padding-left: 71px;
     font-size: 22px;
@@ -45,16 +53,6 @@ nav a{
 nav a:hover{
     background-color: #0b2310;
     color: white;
-}
-
-
-nav{
-    height: 27px;
-    width: 898px;
-    /*margin: auto auto;*/
-    /*background: rgba(200, 54, 54, 1);*/
-    margin-top: -15px;
-    background-color: #6aa444;
 }
 
 nav ul{
@@ -68,37 +66,18 @@ nav ul li{
     width: 170px;
 }
 
-ul li{
-    list-style-type: none;
-    color: black;
+div p{
+    font-size: 15px;
+    margin-left: 10px;
 }
 
-header form{
-    float: right;
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
 }
 
-.headerimglogo{
-    width: 20%;
-    float: left;
-}
-
-header img{
-    float: right;
-    width: 3%;
-}
-
-article{
-    height: 680px;
-    width: 550px;
-    background-color: white;
-    margin: auto auto;
-    overflow: scroll;
-    overflow-x: hidden;
-    float: left;
-    border-radius: 10px;
-    /*border: 5px solid black;*/
-}
-
+/*-------------------------------ESTILO HOME----------------------------------*/
 
 .home{
     float: left;
@@ -113,73 +92,6 @@ article{
     height: 50%;
     border: 4px solid #6aa444;
     border-radius: 20px;
-}
-
-/*body div{
-    height: 150px;
-    width: 900px;
-    margin: auto auto;
-}*/
-
-aside div h1{
-    text-align: center;
-
-    /*width: 300px;*/
-    /*border: 5px solid yellow;*/
-}
-
-footer {
-    margin: auto auto;
-    width: 900px;
-    height: 35px;
-    /*float: right;*/
-    clear: both;
-}
-
-footer ul li{
-    float: left;
-    color: #6aa444;
-    padding: 0 46px 0 46px;
-    border-right: 1px solid;
-    margin: 3px 0 3px 0;
-}
-
-.sinbordeultimo{
-    border: none;
-}
-
-footer div{
-    margin-top: -15.5px;
-    height: 35px;
-    width: 899px;
-}
-
-.formEstilo{
-    font-weight: bold;
-    margin: 16px auto auto;
-    height: 440px;
-    width: 600px;
-    border: 5px solid green;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0px 5px 10px #3d8e00;
-}
-
-form p{
-    padding-left: 30px;
-    padding-top: 5px;
-}
-
-.labelregistro{
-    padding-top: 10px;
-    padding-left: 0px;
-    color: grey;
-}
-
-.imputenviar{
-    float: right;
-    margin-right: 10px;
-    margin-top: -15px;
 }
 
 .divhome{
@@ -205,15 +117,34 @@ form p{
     width: 200px;
 }
 
-h1{
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-
 .sectionhome{
     height: 220px;
 }
+
+a img{
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+
+}
+
+ul li{
+    list-style-type: none;
+    color: black;
+}
+
+article{
+    height: 680px;
+    width: 550px;
+    background-color: white;
+    margin: auto auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    float: left;
+    border-radius: 10px;
+    /*border: 5px solid black;*/
+}
+
+/*-------------------------------ASIDE----------------------------------*/
 
 aside{
     float: right;
@@ -232,6 +163,16 @@ aside div{
     height: 97px;
 }
 
+aside div:hover {
+    background-color: black;
+}
+
+aside div h1{
+    text-align: center;
+    /*width: 300px;*/
+    /*border: 5px solid yellow;*/
+}
+
 aside div a{
     margin-top: 38px;
     margin-left: 4px;
@@ -241,15 +182,43 @@ aside div a{
     font-size: 20px;
 }
 
-aside div:hover {
-    background-color: black;
-}
-
 aside div img{
     float: left;
     margin-top: 38px;
     margin-left: 90px;
 }
+
+/*-------------------------------REGISTRO----------------------------------*/
+
+form p{
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.formEstilo{
+    font-weight: bold;
+    margin: 16px auto auto;
+    height: 440px;
+    width: 600px;
+    border: 5px solid green;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #3d8e00;
+}
+
+.labelregistro{
+    padding-top: 10px;
+    padding-left: 0px;
+    color: grey;
+}
+
+.imputenviar{
+    float: right;
+    margin-right: 10px;
+    margin-top: -15px;
+}
+
+/*-------------------------------CIRCUITOS----------------------------------*/
 
 .columnabusqueda{
     width: 220px;
@@ -268,6 +237,11 @@ aside div img{
     overflow-x: hidden;
 }
 
+.listacircuitos{
+    overflow-x: hidden;
+    height: 675px;
+    /*overflow-y: hidden;*/
+}
 
 .sinbordeultimocircuito{
     float: right;
@@ -275,20 +249,21 @@ aside div img{
     width: 610px;
 }
 
-.listacircuitos{
-    overflow-x: hidden;
-    height: 675px;
-    /*overflow-y: hidden;*/
-}
-
-.transparencia{
-    opacity: 0.5;
-}
-
 .imgcircuito{
     float: left;
     width: 140px;
     height: 130px;
+}
+
+form a{
+    text-decoration: none;
+    color:black;
+}
+
+/*-------------------------------PRODUCTOS----------------------------------*/
+
+.transparencia{
+    opacity: 0.5;
 }
 
 .marcasproductos{
@@ -327,204 +302,36 @@ table, th, td{
     border-collapse: collapse;
 }
 
-form a{
-    text-decoration: none;
-    color:black;
-}
-
 .textocircuitos{
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-div p{
-    font-size: 15px;
-    margin-left: 10px;
-}
-
-/*.imparfilatabla{
-    background-color: #f5f5f5;
-}*/
-
-/*form label{
-    padding-top: 50px;
-    color: aqua;
-}como agarrar solo el label de registro */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-ul{
-    position: relative;
-    padding: 0;
-    left: 50%;
-    float: left;
-}
-
-nav{
-    border-top: 1px solid cornflowerblue;
-    overflow: hidden;
-}
-
-header{
-    background-color: rgba(116, 20, 10, 0.25);
-    background-repeat: no-repeat;
-    background-size: auto;
-    height: 159px;
-    margin: 0%;
-}
-
-li a{
-    padding: 50px;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif;
-    font-size: 20px;
-}
-
-nav li {
-    border: white solid 2px;
-    border-radius: 3px;
-    background-color: brown;
-    text-align: center;
-}
-
-body {
-    background-image: url("images/fondo3.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-color: black;
-}
-
-label{
-    color: white;
-}
-
-td a{
-    color: chocolate;
-}
-
-section img{
-    position: relative;
-    right: 50%;
-    margin: 0 auto;
-    overflow: auto;
-}
-
-div{
-    margin: auto auto;
-}
-
-.navegador{
-    float: left;
-    list-style-type: none;
-    position: relative;
-    right: 50%;
-    margin: auto auto;
-}
-
-.logo{
-    float: left;
-}
-
-.registro{
-    float: right;
-}
-
-
-p {
-    color: darkgreen;
-    font-family: cursive;
-    font-size:50px;
-    background-color: yellow;
-}
-
-.clase {
-    color: red;
-    font-size:50px;
-}
-
-a{
-    text-decoration: none;
-    color: aqua;
-}
-
-body {
-    background-image: url('http://top1walls.com/walls/space/space-lights-stars-galaxies-bright-1517752-1680x1050.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: black;
-}
-
-h1{
-    color: white;
-    text-align: center;
-}
-
-div{
-    background-color: darkblue;
-    border: 6px solid yellow ;
-    height: 100px;
-    margin: 20px;
-    padding: 20px;
-    width: 50%;
-    float: right;
-}
-
-header{
-    color: white;
-}
-
-section {
-    float: left;
-    margin: 10px;
-    width: 600px;
-    background-color: aliceblue;
-}
-
-aside {
-    float: right;
-    margin: 10px;
-    width: 320px;
-}
+/*-------------------------------FOOTER----------------------------------*/
 
 footer {
+    margin: auto auto;
+    width: 900px;
+    height: 35px;
+    /*float: right;*/
     clear: both;
 }
-*/
 
+footer ul li{
+    float: left;
+    color: #6aa444;
+    padding: 0 46px 0 46px;
+    border-right: 1px solid;
+    margin: 3px 0 3px 0;
+}
+
+footer div{
+    margin-top: -15.5px;
+    height: 35px;
+    width: 899px;
+}
+
+.sinbordeultimo{
+    border: none;
+}
