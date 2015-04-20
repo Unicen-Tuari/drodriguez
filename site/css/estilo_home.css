@@ -44,26 +44,33 @@ nav{
 
 nav a{
     text-decoration: none;
-    padding-right: 72px;
-    padding-left: 71px;
+    /*padding-right: 72px;
+    padding-left: 71px;*/
     font-size: 22px;
     color: white;
 }
 
-nav a:hover{
-    background-color: #0b2310;
-    color: white;
+nav ul{
+    /*-webkit-padding-start: 0px;
+    -moz-padding-start: 0px;*/
+    padding: 0;
 }
 
-nav ul{
-    -webkit-padding-start: 0px;
-    -moz-padding-start: 0px;
+nav ul li:hover{
+    background-color: #0b2310;
+    color: white;
 }
 
 nav ul li{
     float: left;
     list-style-type: none;
-    width: 170px;
+    width: 177px;
+    text-align: center;
+    border: 1px solid #0b2310;
+}
+
+.liregistromaslargo{
+    width: 180px;
 }
 
 div p{
@@ -240,6 +247,7 @@ form p{
 .listacircuitos{
     overflow-x: hidden;
     height: 675px;
+    margin-top: 1px;
     /*overflow-y: hidden;*/
 }
 
