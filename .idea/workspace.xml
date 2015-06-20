@@ -27,8 +27,18 @@
       <file leaf-file-name="Home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6467391" vertical-offset="1260" max-vertical-offset="5229">
-              <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.8097826" vertical-offset="1128" max-vertical-offset="5229">
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Home2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-102.2" vertical-offset="0" max-vertical-offset="3192">
+              <caret line="146" column="6" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -47,8 +57,8 @@
       <file leaf-file-name="Ajax.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Ajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="798">
+              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -134,6 +144,7 @@
         <option value="$PROJECT_DIR$/Registro.html" />
         <option value="$PROJECT_DIR$/site/Circuitos.html" />
         <option value="$PROJECT_DIR$/Circuitos.html" />
+        <option value="$PROJECT_DIR$/Home2.html" />
         <option value="$PROJECT_DIR$/js/Ajax.js" />
         <option value="$PROJECT_DIR$/Home.html" />
       </list>
@@ -464,6 +475,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Home2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-102.2" vertical-offset="0" max-vertical-offset="3192">
+          <caret line="146" column="6" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Circuitos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.0" vertical-offset="0" max-vertical-offset="693">
@@ -474,16 +493,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="798">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6467391" vertical-offset="1260" max-vertical-offset="5229">
-          <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.8097826" vertical-offset="1128" max-vertical-offset="5229">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding />
         </state>
       </provider>

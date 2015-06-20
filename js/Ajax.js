@@ -14,3 +14,20 @@ $(document).ready(function(){
         })
     })
 });
+
+$(document).ready(function(){
+    $("#home").on("click",function(event){
+        event.preventDefault();
+        $.ajax({
+            type: "GET",
+            dataType: "html",
+            url: "Home2.html",
+            success: function(data){
+                $("#contenido").html(data);
+            },
+            error: function(){
+                alert("error");
+            }
+        })
+    })
+});
