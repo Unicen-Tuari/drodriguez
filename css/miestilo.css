@@ -1,33 +1,37 @@
 @media (max-width: 1199px) {
-    .productos_lista {
+    .productos {
         margin-left: 9% !important;
+        margin-top: 9%;
     }
 }
 @media (max-width: 991px) {
-    .productos_lista {
-        margin-left: 12.5% !important;
+    .productos {
+        margin-left: 14% !important;
+        margin-top: 14%;
     }
 }
 @media (max-width: 767px) {
-    .productos_lista {
-        width: 98% !important;
+    .productos {
+        width: 100%!important;
         margin-left: 1% !important;
         margin-right: 1% !important;
     }
 }
 
-.productos_home {
+#hola{
+    width: 100%;
+}
+
+.productos {
     width: 170px;
-    height: 300px;
     border-radius: 5px;
     border: 2px solid darkgreen;
     float: left;
     margin-left: 3%;
     margin-top: 5px;
 }
-.productos_home img {
+.productos img {
     width: 100%;
-    margin-top: 10px;
 }
 
 .resaltar {
@@ -40,8 +44,17 @@
     text-align: center;
 }
 
+
 body{
     background-color: black;
+}
+
+.textos {
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .alto {
@@ -55,6 +68,67 @@ footer {
     /*float: right;*/
     clear: both;
 }
+
+.circuito{
+    float: left;
+    height: 280px;
+    width: 675px;
+  /* border-bottom: 2px dashed #6aa444;*/
+    overflow-x: hidden;
+    margin-top: 55px;
+}
+
+#sinmargentop{
+    margin-top: auto;
+}
+
+.sinbordeultimocircuito{
+    float: right;
+    height: 240px;
+    width: 610px;
+}
+
+.imgcircuito{
+    float: left;
+    width: 140px;
+    height: 130px;
+}
+
+.columnabusqueda{
+    width: 220px;
+    height: 682px;
+    background-color: white;
+    margin: auto auto;
+    float: left;
+    border-right: 1px solid #6aa444;
+}
+
+.fondo{
+    background: #ffffff;
+}
+
+ul li{
+    list-style-type: none;
+    color: #ffffff;
+}
+
+.marcasproductos img{
+    height: 95px;
+    opacity: 0.5;
+    border: 2px solid transparent;
+    float: left;
+    margin-left: 9%;
+}
+
+.marcasproductos img:hover{
+    border: 2px solid #6aa444;
+    opacity: 1;
+}
+
+
+
+
+
 
 
 
