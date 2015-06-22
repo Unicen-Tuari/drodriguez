@@ -23,7 +23,7 @@
 </head>
 <body>
 <header>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-sm-2 col-sm-offset-1">
                 <a href="Index.html"><img class="headerimglogo" src="images/logo.png" alt=""></a>
@@ -48,14 +48,20 @@
 
 </header>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
+        <div class="col-md-10 col-md-offset-1">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#">MTBMonster</a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" id="Home" href="#">MTBMonster</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -67,6 +73,18 @@
                             <li><a href="Productos.html"> Productos </a></li>
                             <li><a href="Registro.html"> Registro </a></li>
                         </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">La Empresa <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Fotos</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
@@ -76,55 +94,106 @@
 
 
 <div class="container">
-    <div class="row col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-1 contenedor1 alto">
-        <div class="col-sm-3 col-sm-offset-1">
-            <h1>Paginas relacionadas</h1>
-            <div>
-                <img src="images/Mundo%20Bici%20logo%2020x20.jpg"/> <a href="http://mundobici.net/" target="_blank">Mundo Bici</a>
-            </div>
-            <div>
-                <img src="images/MTB%20Monster%2020x20.jpg"/> <a href="http://www.mtbmonster.com/" target="_blank">MTB Monster</a>
-            </div>
-            <div>
-                <img src="images/Giant%20logo%2020x20.jpg"/> <a href="http://www.giant-bicycles.com.ar/" target="_blank">Giant</a>
-            </div>
-            <div>
-                <img src="images/Raleight%20logo%2020x20.jpg"/><a href="http://bicicletasraleigh.com.ar/" target="_blank">Raleigh</a>
-            </div>
-            <div>
-                <img src="images/Shimano%20logo%2020x20.jpg"/> <a href="http://www.shimano.com/" target="_blank">Shimano</a>
-            </div>
-            <div>
-                <img src="images/Olmo%20logo%2020x20.jpg"/><a href="http://www.olmobikes.com/" target="_blank">Olmo Bike</a>
-            </div>
+    <div class="row col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 contenedor1">
+        <div class="col-md-3 col-md-3 col-sm-3">
+                <table>
+                    <thead>
+                    <tr>
+                        <th> Descripci&oacuten </th>
+                        <th> Precio </th>
+                        <th> Producto </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr class="parfilatabla">
+                        <td> Cuadro de Aluminio <br> 6000 </td>
+                        <td> $19.000 </td>
+                        <td> <img src="images/Cuadro.jpg"> </td>
+                    </tr>
+                    <tr>
+                        <td> Merida One-Twenty XT Edition </td>
+                        <td> $17.000 </td>
+                        <td> <img src="images/bici1.jpg"> </td>
+                    </tr>
+                    <tr class="parfilatabla">
+                        <td> Lapierre X-Control 110 </td>
+                        <td> $11.980 </td>
+                        <td> <img src="images/bici2.jpg"> </td>
+                    </tr>
+                    <tr>
+                        <td> Lapierre X-Control 210 </td>
+                        <td> $13.830 </td>
+                        <td> <img src="images/bici3.jpg"> </td>
+                    </tr>
+                    <tr class="parfilatabla">
+                        <td> Specialized SW Renegade 29" </td>
+                        <td> $420. </td>
+                        <td> <img src="images/cubierta2.jpg"> </td>
+                    </tr>
+                    <tr>
+                        <td> Specialized SW Fast Track 29" </td>
+                        <td> $430 </td>
+                        <td> <img src="images/Cubierta1.jpg"> </td>
+                    </tr>
+                    <tr class="parfilatabla">
+                        <td> Specialized Vice </td>
+                        <td> $810 </td>
+                        <td> <img src="images/casco2.jpg"> </td>
+                    </tr>
+                    <tr>
+                        <td> Uvex Boss Compact Blue-Pearl </td>
+                        <td> $420 </td>
+                        <td> <img src="images/casco1.jpg"> </td>
+                    </tr>
+                    <tr class="parfilatabla">
+                        <td> Mando Drcho Altus 8V SL-M310 </td>
+                        <td> $140 </td>
+                        <td> <img src="images/Mando.jpg"> </td>
+                    </tr>
+                    <tr>
+                        <td> Fox Float 32 120 FIT CTD 1 1/8 </td>
+                        <td> $8.350 </td>
+                        <td> <img src="images/Horquilla.jpg"> </td>
+                    </tr>
+                    </tbody>
+                </table>
         </div>
 
-        <div class="col-md-8">
-                <h1>NUESTRAS MARCAS DE BICICLETAS</h1>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner1.gif"/></a></div>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner6.gif"/></a></div>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner11.gif"/></a></div>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner10.gif"/></a></div>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner13.gif"/></a></div>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner14.gif"/></a></div>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner2.gif"/></a></div>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner4.gif"/></a></div>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner5.gif"/></a></div>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner15.gif"/></a></div>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner17.gif"/></a></div>
-                <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner16.gif"/></a></div>
-
-                <h1>MARCAS DE ROPA Y COMPLEMENTOS</h1>
-                    <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner1.gif"/></a></div>
-                    <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner19.gif"/></a></div>
-                    <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner18.gif"/></a></div>
-                    <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner20.gif"/></a></div>
-                    <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner21.gif"/></a></div>
-                    <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner6.gif"/></a></div>
-                    <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner7.gif"/></a></div>
-                    <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner8.gif"/></a></div>
-                    <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner9.gif"/></a></div>
-                    <div class="marcasproductos"> <a href="#"><img src="images/Productos/banner3.gif"/></a></div>
+        <div class="col-md-9">
+            <h1>NUESTRAS MARCAS DE BICICLETAS</h1>
+            <div class=" row">
+                 <a href="#" class="marcasproductos col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-2  col-sm-offset-1"><img src="images/Productos/banner1.gif"/></a>
+                 <a href="#" class="marcasproductos col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-2  col-sm-offset-1"><img src="images/Productos/banner6.gif"/></a>
+                 <a href="#" class="marcasproductos col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-2  col-sm-offset-1"><img src="images/Productos/banner11.gif"/></a>
+                </div>
+                <div class="row">
+                <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner10.gif"/></a></div>
+                <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner13.gif"/></a></div>
+                <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner14.gif"/></a></div>
+               </div>
+            <div class="row">
+                <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner2.gif"/></a></div>
+                <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner4.gif"/></a></div>
+                <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner5.gif"/></a></div>
+              </div>
+            <div class="row">
+                <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner15.gif"/></a></div>
+                <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner17.gif"/></a></div>
+                <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner16.gif"/></a></div>
+            </div>
+            <h1>MARCAS DE ROPA Y COMPLEMENTOS</h1>
+                </div>
+                    <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner1.gif"/></a></div>
+                    <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner19.gif"/></a></div>
+                    <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner18.gif"/></a></div>
+                    <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner20.gif"/></a></div>
+                    <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner21.gif"/></a></div>
+                    <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner6.gif"/></a></div>
+                    <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner7.gif"/></a></div>
+                    <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner8.gif"/></a></div>
+                    <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner9.gif"/></a></div>
+                    <div class="marcasproductos col-md-3"> <a href="#"><img src="images/Productos/banner3.gif"/></a></div>
         </div>
     </div>
 </div>
