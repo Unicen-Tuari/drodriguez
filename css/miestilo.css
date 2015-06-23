@@ -123,21 +123,20 @@ table tr td img{
 
 .botonlinks{
     width:100%;
-}
-.btn:hover{
-    background:#000000;
-    color: #ffffff;
-}
-
-.botonlinks{
-    width:100%;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
     background: grey;
-    margin-bottom: 100px;
+    margin-bottom: 5px;
 }
+
+.botonlinks:hover{
+    background:#000000;
+    color: #ffffff;
+}
+
+
 
 form p{
     color: #ffffff;
