@@ -7,6 +7,7 @@
 @media (max-width: 991px) {
     .productos {
         margin-left: 14% !important;
+        margin-right: 10%;
         margin-top: 14%;
     }
 }
@@ -17,9 +18,14 @@
         margin-right: 1% !important;
     }
 }
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
 
-#hola{
-    width: 100%;
+.imagensociales{
+    width: 30px;
+    height: 30px;
 }
 
 .productos {
@@ -30,6 +36,7 @@
     margin-left: 3%;
     margin-top: 5px;
 }
+
 .productos img {
     width: 100%;
 }
@@ -44,7 +51,6 @@
     text-align: center;
 }
 
-
 body{
     background-color: black;
 }
@@ -55,15 +61,6 @@ body{
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.circuito{
-    float: left;
-    height: 280px;
-    width: 675px;
-  /* border-bottom: 2px dashed #6aa444;*/
-    overflow-x: hidden;
-    margin-top: 55px;
 }
 
 #sinmargentop{
@@ -77,18 +74,8 @@ body{
 }
 
 .imgcircuito{
-    float: left;
     width: 140px;
     height: 130px;
-}
-
-.columnabusqueda{
-    width: 220px;
-    height: 682px;
-    background-color: white;
-    margin: auto auto;
-    float: left;
-    border-right: 1px solid #6aa444;
 }
 
 .fondo{
@@ -101,11 +88,11 @@ ul li{
 }
 
 .marcasproductos img{
-    height: 95px;
+    width: 100%;
     opacity: 0.5;
     border: 2px solid transparent;
-    /*float: left;*/
-    margin-left: 9%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .marcasproductos img:hover{
@@ -118,9 +105,33 @@ table tr td img{
     width: 50px;
 }
 
+.coloreo {
+    height: 5px;
+    border-top: 0;
+    background: #c4e17f;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
 
+.sinpaddingform{
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
+a button{
+    width:100%;
+}
+.btn:hover{
+    background:#000000;
+    color: #ffffff;
+}
 
+form p{
+    color: #ffffff;
+}
 
 
 
