@@ -129,6 +129,16 @@ table tr td img{
     color: #ffffff;
 }
 
+.botonlinks{
+    width:100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: grey;
+    margin-bottom: 100px;
+}
+
 form p{
     color: #ffffff;
 }
