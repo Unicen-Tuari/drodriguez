@@ -32,7 +32,7 @@
                         <a href="http://es.wikiloc.com/wikiloc/view.do?id=4586444" target="_blank">Tandil - Gardey</a>
                         <h5>30,3 kilómetros - Moderado</h5>
                         <p>cerca de Tandil, Buenos Aires (Argentina)</p>
-                        <img class="imgcircuito" src="images/Circuitos/Gardey%201.jpg">
+                        <img class="imgcircuito" src="images/Circuitos/Gardey%201.jpg" >
                         <img class="imgcircuito" src="images/Circuitos/Gardey%203.jpg">
                         <img class="imgcircuito" src="images/Circuitos/Gardey%204.jpg">
                         <img class="imgcircuito" src="images/Circuitos/Gardey%205.jpg">
