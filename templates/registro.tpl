@@ -16,7 +16,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group" >
                     <input type="text" name="nombre de usuario" id="display_name" class="form-control input-lg" placeholder="Nombre de Usuario" tabindex="3">
                 </div>
                 <div class="form-group">

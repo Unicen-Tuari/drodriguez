@@ -42,7 +42,7 @@
                             <th> Producto </th>
                         </tr>
                         </thead>
-                        <tbody id="datos">
+                        <tbody id="datos" >
                         </tbody>
                         <tfoot>
                             <tr>

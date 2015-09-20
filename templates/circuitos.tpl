@@ -15,7 +15,7 @@
                             <li><a href="#"> 25km - 50km </a> </li>
                             <li><a href="#"> 50km - 110km </a> </li>
                             <li><a href="#"> 110km + </a> </li><br>
-                            <li class="color"><input type="text" name="Km" size="3"> km - <input type="text" name="Km" size="3"> km</li><br><input type="submit" value="Buscar">
+                            <li class="color"><input type="text" name="Km" size="3" > km - <input type="text" name="Km" size="3"> km</li><br><input type="submit" value="Buscar">
                             <li><br><a href="#"> <h4> Cualquier Dificultad </h4> </a> </li>
                             <li><a href="#"> Fácil </a> </li>
                             <li><a href="#"> Moderado </a> </li>
