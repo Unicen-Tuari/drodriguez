@@ -1,29 +1,21 @@
 <?php
 
-  require('libs/smarty/Smarty.class.php');
-  $templateEngine = new Smarty();
-  $templateEngine->debugging = false;
+  // require('libs/smarty/Smarty.class.php');
+  REQUIRE_ONCE('Controller/controller.php');
+  REQUIRE_ONCE('Config/config_app.php');
 
-  if(!array_key_exists("nav",$_REQUEST)){
-    $templateEngine->display('index.tpl');
+  // $templateEngine = new Smarty();
+  // $templateEngine->debugging = false;
+
+  $Top_Controler = new Controller();
+
+  if(!array_key_exists(RouterConfig::$ACTION,$_REQUEST))
+  {
+    $Top_Controler->mostrar(RouterConfig::$ACTION_INDEX);
   }
-  elseif ($_REQUEST["nav"] === "home"){
-    $templateEngine->display('home.tpl');
-  }
-  elseif ($_REQUEST["nav"] === "circuitos"){
-    $templateEngine->display('circuitos.tpl');
-  }
-  elseif ($_REQUEST["nav"] === "eventos"){
-    $templateEngine->display('eventos.tpl');
-  }
-  elseif ($_REQUEST["nav"] === "productos"){
-    $templateEngine->display('productos.tpl');
-  }
-  elseif ($_REQUEST["nav"] === "registro"){
-    $templateEngine->display('registro.tpl');
-  }
-  elseif ($_REQUEST["nav"] === "juegodados"){
-    $templateEngine->display('juegodados.tpl');
+  else
+  {
+    $Top_Controler->mostrar($_REQUEST[RouterConfig::$ACTION]);
   }
 
 ?>

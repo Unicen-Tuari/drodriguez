@@ -4,7 +4,7 @@ $(document).ready(function(){
     $.ajax({
         type: "GET",
         dataType: "html",
-        url: "index.php?nav=" + argument,
+        url: "index.php?action=" + argument,
         success: function(data){
             $("#contenido").html(data);
         },
@@ -14,7 +14,7 @@ $(document).ready(function(){
     })
   }
 
-cargar("home");
+    cargar("home");
 
     $("#circuitos").on("click",function(event){
         event.preventDefault();
