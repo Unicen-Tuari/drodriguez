@@ -1,4 +1,25 @@
-<html>
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-23 21:24:22
+         compiled from ".\templates\index.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:320645602f600bbfbc6-33442878%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '749422d4cfc3eb5677cf499730392b6accd4d1c7' => 
+    array (
+      0 => '.\\templates\\index.tpl',
+      1 => 1443036257,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '320645602f600bbfbc6-33442878',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_5602f600c50460_80749503',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5602f600c50460_80749503')) {function content_5602f600c50460_80749503($_smarty_tpl) {?><html>
     <head>
 
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -106,3 +127,4 @@
     <script src="js/Ajax.js"></script>
   </body>
 </html>
+<?php }} ?>

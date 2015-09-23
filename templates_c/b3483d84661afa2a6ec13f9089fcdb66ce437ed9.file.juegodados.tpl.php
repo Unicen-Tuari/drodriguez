@@ -1,4 +1,25 @@
-
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-23 21:38:53
+         compiled from ".\templates\juegodados.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:97575602ffcdc83943-47998911%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'b3483d84661afa2a6ec13f9089fcdb66ce437ed9' => 
+    array (
+      0 => '.\\templates\\juegodados.tpl',
+      1 => 1443037093,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '97575602ffcdc83943-47998911',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_5602ffcdc9eed7_75947903',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5602ffcdc9eed7_75947903')) {function content_5602ffcdc9eed7_75947903($_smarty_tpl) {?>
       <div class="container">
           <div class="row">
               <div class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 contenedor fondodados">
@@ -33,3 +54,4 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/Juego.js"></script>
+<?php }} ?>

@@ -1,4 +1,25 @@
-<div class="container">
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-23 21:36:59
+         compiled from ".\templates\productos.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:116285602fd14c6b8d2-90874854%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '6df90411d030ce6933bcd9d906fbf42dbdcbb40a' => 
+    array (
+      0 => '.\\templates\\productos.tpl',
+      1 => 1443036986,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '116285602fd14c6b8d2-90874854',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_5602fd14ddac20_64616312',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5602fd14ddac20_64616312')) {function content_5602fd14ddac20_64616312($_smarty_tpl) {?><div class="container">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 contenedor">
             <div class=" row">
@@ -65,3 +86,4 @@
 </div>
 
 <script src="js/Tabla.js"></script>
+<?php }} ?>
