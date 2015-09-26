@@ -167,7 +167,7 @@ table thead tr th{
     text-align: center;
 }
 
-ul li{
+#li{
     list-style-type: none;
     color: #ffffff;
 }
@@ -177,6 +177,17 @@ table tr td img{
     width: 50px;
 }
 
+/*---------------LISTADO-----------------*/
+#listadodecoration{
+  list-style-type: none;
+  color: black;
+}
 
+#imagenes {
+  width: 100%;
+  margin: 20% 4%;
+}
 
-
+.texto {
+  margin-top: 1%;
+}

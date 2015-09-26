@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-09-23 21:24:22
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-26 18:28:18
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:320645602f600bbfbc6-33442878%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '749422d4cfc3eb5677cf499730392b6accd4d1c7' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1443036257,
+      1 => 1443284896,
       2 => 'file',
     ),
   ),
@@ -92,9 +92,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                 <li><a id="eventos" href="#"> Eventos </a></li>
                                 <li><a id="productos" href="#"> Productos </a></li>
                                 <li><a id="registro" href="#"> Registro </a></li>
+                                <li><a id="listado" href="#"> Listado Productos </a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a id="juego" href="#"> Juego de Dados </a></li>
+                                <li><a id="juego" href="#"> Juego </a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
@@ -104,7 +105,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </div>
 
     <div id="contenido"><!-- aca se ensambla con la seccion seleccionada por el usuario en el nav -->
-      
+
 
     </div> <!--  fin del contenedor -->
 

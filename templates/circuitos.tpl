@@ -4,7 +4,7 @@
             <div class="row busquedaycircuitos ">
                 <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-9 col-xs-offset-2">
                     <form >
-                        <ul>
+                        <ul id="li">
                             <li><a href="#"> <h4> Cualquier Ruta </h4></a> </li>
                             <li><a href="#"> Solo ida </a> </li>
                             <li><a href="#"> Circulares </a> </li><br>

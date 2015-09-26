@@ -41,6 +41,11 @@ $(document).ready(function(){
         cargar("eventos");
     })
 
+    $("#listado").on("click",function(event){
+        event.preventDefault();
+        cargar("listado");
+    })
+
     $("#juego").on("click",function(event){
         event.preventDefault();
         cargar("juegodados");

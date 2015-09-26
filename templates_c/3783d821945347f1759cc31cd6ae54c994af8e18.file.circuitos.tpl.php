@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-09-23 21:27:12
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-26 19:26:31
          compiled from ".\templates\circuitos.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:301425602fd10454aa4-91329703%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3783d821945347f1759cc31cd6ae54c994af8e18' => 
     array (
       0 => '.\\templates\\circuitos.tpl',
-      1 => 1442789029,
+      1 => 1443288381,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.14',
   'unifunc' => 'content_5602fd1053f0b6_10051811',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5602fd1053f0b6_10051811')) {function content_5602fd1053f0b6_10051811($_smarty_tpl) {?><div class="container">
     <div class="row">
@@ -25,7 +25,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div class="row busquedaycircuitos ">
                 <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-9 col-xs-offset-2">
                     <form >
-                        <ul>
+                        <ul id="li">
                             <li><a href="#"> <h4> Cualquier Ruta </h4></a> </li>
                             <li><a href="#"> Solo ida </a> </li>
                             <li><a href="#"> Circulares </a> </li><br>

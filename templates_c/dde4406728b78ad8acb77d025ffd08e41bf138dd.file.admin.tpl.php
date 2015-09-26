@@ -1,4 +1,25 @@
-<html>
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-26 16:07:40
+         compiled from ".\templates\admin.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:297935606a6908291f2-28891100%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'dde4406728b78ad8acb77d025ffd08e41bf138dd' => 
+    array (
+      0 => '.\\templates\\admin.tpl',
+      1 => 1443276458,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '297935606a6908291f2-28891100',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_5606a690903e28_65978729',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5606a690903e28_65978729')) {function content_5606a690903e28_65978729($_smarty_tpl) {?><html>
     <head>
 
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -71,10 +92,9 @@
                                 <li><a id="eventos" href="#"> Eventos </a></li>
                                 <li><a id="productos" href="#"> Productos </a></li>
                                 <li><a id="registro" href="#"> Registro </a></li>
-                                <li><a id="listado" href="#"> Listado Productos </a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a id="juego" href="#"> Juego </a></li>
+                                <li><a id="juego" href="#"> Juego de Dados </a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
@@ -83,23 +103,6 @@
         </div>
     </div>
 
-    <div id="contenido"><!-- aca se ensambla con la seccion seleccionada por el usuario en el nav -->
-
-
-    </div> <!--  fin del contenedor -->
-
-    <footer>
-        <div>
-            <ul>
-                <li> Jose Hernandez 128 </li>
-                <li> Tandil Bs As </li>
-                <li> Codigo Postal: 7000 </li>
-                <li> (0249) 4278322 </li>
-            </ul>
-        </div>
-    </footer>
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed-->
@@ -107,3 +110,4 @@
     <script src="js/Ajax.js"></script>
   </body>
 </html>
+<?php }} ?>
