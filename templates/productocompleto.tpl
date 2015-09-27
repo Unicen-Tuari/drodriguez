@@ -12,12 +12,10 @@
                 </div>
 
                 <div class="col-md-8 texto">
-                  {$producto['nombre_prod']}<br><br>
-                  {$producto['descripcion']}<br><br>
-                  {$producto['fk_id_cat']}
-                </div>
+                  {$producto['nombre']}<br><br>
+                  
 
-                <button id="completo" href="#" type="button" name="button">Descripcion Completa</button>
+                </div>
 
               </li>
             {/foreach}
@@ -25,6 +23,3 @@
         </div>
     </div>
 </div>
-
-<script src="js/Producto.js"></script>
-<!-- <a href="#" class="marcasproductos col-lg-3 col-md-3 col-sm-4 col-xs-6"><img src="images/Productos/banner1.gif"/></a> -->

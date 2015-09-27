@@ -1,31 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-09-27 22:07:44
-         compiled from ".\templates\admin.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:297935606a6908291f2-28891100%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-$_valid = $_smarty_tpl->decodeProperties(array (
-  'file_dependency' => 
-  array (
-    'dde4406728b78ad8acb77d025ffd08e41bf138dd' => 
-    array (
-      0 => '.\\templates\\admin.tpl',
-      1 => 1443384460,
-      2 => 'file',
-    ),
-  ),
-  'nocache_hash' => '297935606a6908291f2-28891100',
-  'function' => 
-  array (
-  ),
-  'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_5606a690903e28_65978729',
-  'variables' => 
-  array (
-    'productos' => 0,
-    'producto' => 0,
-    'imagen' => 0,
-  ),
-  'has_nocache_code' => false,
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5606a690903e28_65978729')) {function content_5606a690903e28_65978729($_smarty_tpl) {?><html>
+<html>
     <head>
 
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -58,37 +31,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
               <div class="col-sm-7">
                 <ul class="list-group">
-                  <?php  $_smarty_tpl->tpl_vars['producto'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['producto']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['productos']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['producto']->key => $_smarty_tpl->tpl_vars['producto']->value){
-$_smarty_tpl->tpl_vars['producto']->_loop = true;
-?>
+                  {foreach $productos as $producto}
                     <li class="list-group-item col-sm-12">
 
-                      <?php  $_smarty_tpl->tpl_vars['imagen'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['imagen']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['producto']->value['imagenes']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['imagen']->key => $_smarty_tpl->tpl_vars['imagen']->value){
-$_smarty_tpl->tpl_vars['imagen']->_loop = true;
-?>
+                      {foreach $producto['imagenes'] as $imagen}
                       <div  class="col-sm-1">
-                          <img src="<?php echo $_smarty_tpl->tpl_vars['imagen']->value;?>
-" alt="No cargo bien" id="imagenesAdmin" />
+                          <img src="{$imagen}" alt="No cargo bien" id="imagenesAdmin" />
                       </div>
-                      <?php } ?>
+                      {/foreach}
 
                       <div class="col-sm-11 texto">
-                        <?php echo $_smarty_tpl->tpl_vars['producto']->value['id_prod'];?>
-
-                        <?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre_prod'];?>
-
-                        <?php echo $_smarty_tpl->tpl_vars['producto']->value['descripcion'];?>
-
-                        <?php echo $_smarty_tpl->tpl_vars['producto']->value['fk_id_cat'];?>
-
+                        {$producto['id_prod']}
+                        {$producto['nombre_prod']}
+                        {$producto['descripcion']}
+                        {$producto['fk_id_cat']}
                       </div>
 
                     </li>
-                  <?php } ?>
+                  {/foreach}
                   </ul>
 
                   <form>
@@ -151,4 +111,3 @@ $_smarty_tpl->tpl_vars['imagen']->_loop = true;
     <script src="js/Categoria.js"></script>
   </body>
 </html>
-<?php }} ?>

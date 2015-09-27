@@ -178,6 +178,7 @@ table tr td img{
 }
 
 /*---------------LISTADO-----------------*/
+
 #listadodecoration{
   list-style-type: none;
   color: black;
@@ -190,4 +191,11 @@ table tr td img{
 
 .texto {
   margin-top: 1%;
+}
+
+/*--------------------ADMIN------------------*/
+
+#imagenesAdmin {
+  width: 200%;
+  margin: 5% 1%;
 }
