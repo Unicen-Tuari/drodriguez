@@ -1,5 +1,24 @@
 $(document).ready(function(){
 
+  $("#formcategoria").submit(function(event){
+  event.preventDefault();
+      $.ajax({
+          url: "index.php?action=addCategoria",
+          type: "post",
+          data: new FormData(this),
+          contentType : false,
+          processData : false,
+          success: function(){
+            cargar('categoriasDrop');
+            cargar1('categoriasListar');
+          },
+          error:function(){
+              alert("error");
+          }
+      });
+
+});
+
   function cargar1(argument) {
     $.ajax({
         type: "GET",

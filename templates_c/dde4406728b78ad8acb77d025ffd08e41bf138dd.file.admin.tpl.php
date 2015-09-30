@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-09-30 01:48:44
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-30 03:23:22
          compiled from ".\templates\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:297935606a6908291f2-28891100%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dde4406728b78ad8acb77d025ffd08e41bf138dd' => 
     array (
       0 => '.\\templates\\admin.tpl',
-      1 => 1443570517,
+      1 => 1443576185,
       2 => 'file',
     ),
   ),
@@ -134,10 +134,10 @@ $_smarty_tpl->tpl_vars['imagen']->_loop = true;
                     <!-- Listo las categorias-->
                   </ul>
 
-                  <form>
+                  <form id="formcategoria">
                     <div class="form-group">
                       <h4>Categoria</h4>
-                      <input type="text" class="form-control" >
+                      <input type="text" class="form-control" id="nombre_categoria" name="nombre_categoria">
                     </div>
                     <button type="submit" class="btn btn-default">Cargar</button>
                   </form>

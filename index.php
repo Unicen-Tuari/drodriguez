@@ -20,7 +20,13 @@
     $Top_Controler->mostrarCategorias($_REQUEST[RouterConfig::$ACTION]);
   }
   elseif ($_REQUEST[RouterConfig::$ACTION]=="ProductoCompleto" && isset($_REQUEST['id'])){
-  $Top_Controler->mostrarProducto($_REQUEST[RouterConfig::$ACTION],$_REQUEST['id']);
+    $Top_Controler->mostrarProducto($_REQUEST[RouterConfig::$ACTION],$_REQUEST['id']);
+  }
+  elseif ($_REQUEST[RouterConfig::$ACTION]=="addCategoria"){
+    $Top_Controler->agregarCategoria();
+  }
+  elseif ($_REQUEST[RouterConfig::$ACTION]=="addProducto"){
+    $Top_Controler->agregarProducto();
   }
   else
   {

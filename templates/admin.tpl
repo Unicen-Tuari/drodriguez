@@ -94,10 +94,10 @@
                     <!-- Listo las categorias-->
                   </ul>
 
-                  <form>
+                  <form id="formcategoria">
                     <div class="form-group">
                       <h4>Categoria</h4>
-                      <input type="text" class="form-control" >
+                      <input type="text" class="form-control" id="nombre_categoria" name="nombre_categoria">
                     </div>
                     <button type="submit" class="btn btn-default">Cargar</button>
                   </form>

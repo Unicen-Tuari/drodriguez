@@ -26,6 +26,14 @@
     $this->view->mostrarCat($accion, $this->model->getCategorias());
   }
 
+	function agregarCategoria(){
+    $this->model->addCategoria($_REQUEST["nombre_categoria"]);
+  }
+
+	function agregarProducto(){
+    $this->model->addProducto($_REQUEST["nombre_producto"]);
+  }
+
 	// Mostrar el template que la accion contenga
 
 		function mostrar($accion){
