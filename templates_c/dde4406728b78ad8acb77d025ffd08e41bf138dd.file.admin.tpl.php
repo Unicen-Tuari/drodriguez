@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-09-30 03:23:22
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-30 06:09:31
          compiled from ".\templates\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:297935606a6908291f2-28891100%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dde4406728b78ad8acb77d025ffd08e41bf138dd' => 
     array (
       0 => '.\\templates\\admin.tpl',
-      1 => 1443576185,
+      1 => 1443586116,
       2 => 'file',
     ),
   ),
@@ -17,12 +17,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'version' => 'Smarty-3.1.14',
   'unifunc' => 'content_5606a690903e28_65978729',
-  'variables' => 
-  array (
-    'productos' => 0,
-    'producto' => 0,
-    'imagen' => 0,
-  ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5606a690903e28_65978729')) {function content_5606a690903e28_65978729($_smarty_tpl) {?><html>
@@ -57,57 +51,23 @@ $_valid = $_smarty_tpl->decodeProperties(array (
           <div class="row">
 
               <div class="col-sm-7">
-                <ul class="list-group">
-                  <?php  $_smarty_tpl->tpl_vars['producto'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['producto']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['productos']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['producto']->key => $_smarty_tpl->tpl_vars['producto']->value){
-$_smarty_tpl->tpl_vars['producto']->_loop = true;
-?>
-                    <li class="list-group-item col-sm-12">
+                <ul class="list-group" id="productosList">
+                  <!-- listo los productos de la base de datos -->
+                </ul>
 
-                      <?php  $_smarty_tpl->tpl_vars['imagen'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['imagen']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['producto']->value['imagenes']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['imagen']->key => $_smarty_tpl->tpl_vars['imagen']->value){
-$_smarty_tpl->tpl_vars['imagen']->_loop = true;
-?>
-                      <div  class="col-sm-1">
-                          <img src="<?php echo $_smarty_tpl->tpl_vars['imagen']->value;?>
-" alt="No cargo bien" id="imagenesAdmin" />
-                      </div>
-                      <?php } ?>
-
-                      <div class="col-sm-11 texto">
-                        <?php echo $_smarty_tpl->tpl_vars['producto']->value['id_prod'];?>
-
-                        <?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre_prod'];?>
-
-                        <?php echo $_smarty_tpl->tpl_vars['producto']->value['descripcion'];?>
-
-                        <?php echo $_smarty_tpl->tpl_vars['producto']->value['fk_id_cat'];?>
-
-                      </div>
-
-                    </li>
-                  <?php } ?>
-                  </ul>
-
-                  <form>
+                  <form id="formproducto">
                     <div class="form-group">
                       <h4>Nombre del Producto</h4>
-                      <input type="text" class="form-control" >
+                      <input type="text" class="form-control" id="nombre" name="nombre" >
                     </div>
                     <div class="form-group">
                       <h4>Descripcion</h4>
-                      <textarea class="form-control" rows="1"></textarea>
+                      <textarea class="form-control" rows="1" id="descripcion" name="descripcion"></textarea>
                       <!-- <input type="password" class="form-control"> -->
                     </div>
-                    <!-- <div class="form-group">
-                      <h4>Categoria</h4>
-                      <input type="text" class="form-control" >
-                    </div> -->
-                    <!-- <div class="btn-group"> -->
+
                       <div class="form-group">
-                        <select id="categorias" name="id_cat">
+                        <select id="categorias" name="categorias">
 
                         </select>
                       </div>

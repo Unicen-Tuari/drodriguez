@@ -30,44 +30,23 @@
           <div class="row">
 
               <div class="col-sm-7">
-                <ul class="list-group">
-                  {foreach $productos as $producto}
-                    <li class="list-group-item col-sm-12">
+                <ul class="list-group" id="productosList">
+                  <!-- listo los productos de la base de datos -->
+                </ul>
 
-                      {foreach $producto['imagenes'] as $imagen}
-                      <div  class="col-sm-1">
-                          <img src="{$imagen}" alt="No cargo bien" id="imagenesAdmin" />
-                      </div>
-                      {/foreach}
-
-                      <div class="col-sm-11 texto">
-                        {$producto['id_prod']}
-                        {$producto['nombre_prod']}
-                        {$producto['descripcion']}
-                        {$producto['fk_id_cat']}
-                      </div>
-
-                    </li>
-                  {/foreach}
-                  </ul>
-
-                  <form>
+                  <form id="formproducto">
                     <div class="form-group">
                       <h4>Nombre del Producto</h4>
-                      <input type="text" class="form-control" >
+                      <input type="text" class="form-control" id="nombre" name="nombre" >
                     </div>
                     <div class="form-group">
                       <h4>Descripcion</h4>
-                      <textarea class="form-control" rows="1"></textarea>
+                      <textarea class="form-control" rows="1" id="descripcion" name="descripcion"></textarea>
                       <!-- <input type="password" class="form-control"> -->
                     </div>
-                    <!-- <div class="form-group">
-                      <h4>Categoria</h4>
-                      <input type="text" class="form-control" >
-                    </div> -->
-                    <!-- <div class="btn-group"> -->
+
                       <div class="form-group">
-                        <select id="categorias" name="id_cat">
+                        <select id="categorias" name="categorias">
 
                         </select>
                       </div>

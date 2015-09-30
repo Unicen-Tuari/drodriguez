@@ -49,5 +49,5 @@ $(document).ready(function(){
 
   cargar('categoriasDrop');
   cargar1('categoriasListar');
-
+  
 });

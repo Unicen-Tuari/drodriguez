@@ -13,7 +13,7 @@
   {
     $Top_Controler->mostrar(RouterConfig::$ACTION_INDEX);
   }
-  elseif( ($_REQUEST[RouterConfig::$ACTION] == "listado") ||  ($_REQUEST[RouterConfig::$ACTION] == "admin")){
+  elseif( ($_REQUEST[RouterConfig::$ACTION] == "listado") ||  ($_REQUEST[RouterConfig::$ACTION] == "productosadmin")){
     $Top_Controler->mostrarProductos($_REQUEST[RouterConfig::$ACTION]);
   }
   elseif(($_REQUEST[RouterConfig::$ACTION] == "categoriasDrop")  ||  ($_REQUEST[RouterConfig::$ACTION] == "categoriasListar")){

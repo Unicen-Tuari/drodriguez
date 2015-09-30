@@ -87,83 +87,36 @@ class ProductosModel {
   }
 }
 
-// function addProducto($producto){
-// if(strlen($producto) > 4){
-//   try{
-//     $this->db->beginTransaction();
-//     $queryInsert = $this->db->prepare('INSERT INTO categoria(nombre) VALUES(?)');
-//     $queryInsert->execute(array($categoria));
-//     $this->db->commit();
-//   }
-//   catch(Exception $e)
-//   {
-//     $this->db->rollBack();
-//   }
-// }
-// }
+  private function subirImagenes($imagenes){
+      $carpeta = "uploads/imagenes/";
+      $destinos_finales = array();
+      foreach ($imagenes["tmp_name"] as $key => $value) {
+        $destinos_finales[] = $carpeta.uniqid().$imagenes["name"][$key];
+        move_uploaded_file($value, end($destinos_finales));
+      }
+      return $destinos_finales;
+    }
 
-//   function agregarTarea($producto, $imagenes){
-//
-// try{
-//
-//   $destinos_finales=$this->subirImagenes($imagenes);
-// //Inserto la tarea
-//     $this->db->beginTransaction();
-//     $consulta = $this->db->prepare('INSERT INTO tarea(tarea) VALUES(?)');
-//     $consulta->execute(array($tarea));
-//     $id_tarea = $this->db->lastInsertId();
-// //Insertar las imagenes
-//     foreach ($destinos_finales as $key => $value) {
-//       $consulta = $this->db->prepare('INSERT INTO imagen(fk_id_tarea,path) VALUES(?,?)');
-//       $consulta->execute(array($id_tarea, $value));
-//     }
-//     $this->db->commit();
-//   }
-//   catch(Exception $e){
-//
-//     $this->db->rollBack();
-//   }
-//   }
-//
-//   function borrarTarea($id_tarea){
-//     $consulta = $this->db->prepare('DELETE FROM tarea WHERE id=?');
-//     $consulta->execute(array($id_tarea));
-//   }
-//
-//   function realizarTarea($id_tarea){
-//     $consulta = $this->db->prepare('UPDATE tarea SET realizada=1 WHERE id=?');
-//     $consulta->execute(array($id_tarea));
-//   }
-//
-//   function actualizarTarea($id_tarea, $entity){
-//     $consulta = $this->db->prepare('UPDATE tarea SET tarea=:tarea, realizada=:realizada WHERE id=:id');
-//     $consulta->execute(array(
-//       "tarea" => $entity->tarea,
-//       "realizada" => $entity->realizada,
-//       "id" => $id_tarea
-//       )
-//     );
-//   }
-//
-//   private function subirImagenesAjax($imagenes){
-//     $carpeta = "uploads/imagenes/";
-//     $destinos_finales = array();
-//     foreach ($imagenes as $imagen) {
-//       $destino =  $carpeta.uniqid().$imagen["name"];
-//       move_uploaded_file($imagen["tmp_name"], $destino);
-//       $destinos_finales[] = $destino;
-//     }
-//     return $destinos_finales;
-//   }
-//
-//
-//   function agregarImagenes($id_tarea, $imagenes){
-//     $rutas=$this->subirImagenesAjax($imagenes);
-//     $consulta = $this->db->prepare('INSERT INTO imagen(fk_id_tarea,path) VALUES(?,?)');
-//     foreach($rutas as $ruta){
-//       $consulta->execute(array($id_tarea,$ruta));
-//     }
-//   }
+  function addProducto($categoria, $nombre, $descripcion, $imagenes){
+
+        try{
+          $destinos_finales=$this->subirImagenes($imagenes);
+
+          $this->db->beginTransaction();
+          $consulta = $this->db->prepare('INSERT INTO producto(fk_id_cat, nombre, descripcion) VALUES(?,?,?)');
+          $consulta->execute(array($categoria, $nombre, $descripcion));
+          $id_producto = $this->db->lastInsertId(); //ultimo id del elemento agregado
+
+          foreach ($destinos_finales as $key => $value) {
+            $consulta = $this->db->prepare('INSERT INTO imagen(fk_id_producto, path) VALUES(?,?)');
+            $consulta->execute(array($id_producto, $value));
+          }
+          $this->db->commit();
+        }
+          catch(Exception $e){
+            $this->db->rollBack();
+        }
+      }
 
 
 }
