@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-09-27 22:07:44
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-30 01:48:44
          compiled from ".\templates\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:297935606a6908291f2-28891100%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dde4406728b78ad8acb77d025ffd08e41bf138dd' => 
     array (
       0 => '.\\templates\\admin.tpl',
-      1 => 1443384460,
+      1 => 1443570517,
       2 => 'file',
     ),
   ),
@@ -101,22 +101,27 @@ $_smarty_tpl->tpl_vars['imagen']->_loop = true;
                       <textarea class="form-control" rows="1"></textarea>
                       <!-- <input type="password" class="form-control"> -->
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <h4>Categoria</h4>
                       <input type="text" class="form-control" >
-                    </div>
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </div> -->
+                    <!-- <div class="btn-group"> -->
+                      <div class="form-group">
+                        <select id="categorias" name="id_cat">
+
+                        </select>
+                      </div>
+                    <!-- <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Categorias <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" id="categorias">
-                      <!-- Listo las categorias en el dropdown-->
-                    </ul>
-                    </div>
+                       Listo las categorias en el dropdown
+                    </ul> -->
+                    <!-- </div> -->
                     <div class="form-group">
                       <br>
                       <label for="exampleInputFile">Imagen producto</label>
-                      <input type="file" id="exampleInputFile">
+                      <input type="file" id="exampleInputFile" name="exampleInputFile[]">
                       <!-- <p class="help-block">Example block-level help text here.</p> -->
                     </div>
                     <button type="submit" class="btn btn-default">Cargar</button>
@@ -147,7 +152,7 @@ $_smarty_tpl->tpl_vars['imagen']->_loop = true;
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed-->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/Producto.js"></script>
+    <script src="js/Productos.js"></script>
     <script src="js/Categoria.js"></script>
   </body>
 </html>

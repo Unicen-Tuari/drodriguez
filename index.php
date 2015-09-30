@@ -19,6 +19,9 @@
   elseif(($_REQUEST[RouterConfig::$ACTION] == "categoriasDrop")  ||  ($_REQUEST[RouterConfig::$ACTION] == "categoriasListar")){
     $Top_Controler->mostrarCategorias($_REQUEST[RouterConfig::$ACTION]);
   }
+  elseif ($_REQUEST[RouterConfig::$ACTION]=="ProductoCompleto" && isset($_REQUEST['id'])){
+  $Top_Controler->mostrarProducto($_REQUEST[RouterConfig::$ACTION],$_REQUEST['id']);
+  }
   else
   {
     $Top_Controler->mostrar($_REQUEST[RouterConfig::$ACTION]);

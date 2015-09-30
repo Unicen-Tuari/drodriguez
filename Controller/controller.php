@@ -14,9 +14,13 @@
 		}
 
 
-		function mostrarProductos($accion){
+	function mostrarProductos($accion){
     $this->view->mostrarProd($accion, $this->model->getProductos());
   }
+
+	function mostrarProducto($accion, $id){
+    $this->view->mostrarProdCompleto($accion, $this->model->getProducto($id));
+  	}
 
 	function mostrarCategorias($accion){
     $this->view->mostrarCat($accion, $this->model->getCategorias());

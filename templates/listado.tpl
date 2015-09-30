@@ -17,7 +17,7 @@
                   {$producto['fk_id_cat']}
                 </div>
 
-                <button id="completo" href="#" type="button" name="button">Descripcion Completa</button>
+                <button class="verProducto" href="#" type="button" name="button" value={$producto['id_prod']}>Descripcion Completa</button>
 
               </li>
             {/foreach}
@@ -26,5 +26,5 @@
     </div>
 </div>
 
-<script src="js/Producto.js"></script>
+<script src="js/ProductoCompleto.js"></script>
 <!-- <a href="#" class="marcasproductos col-lg-3 col-md-3 col-sm-4 col-xs-6"><img src="images/Productos/banner1.gif"/></a> -->

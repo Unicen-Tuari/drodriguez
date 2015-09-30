@@ -84,6 +84,12 @@
     $this->smarty->display($accion .'.tpl');
   }
 
+  function mostrarProdCompleto($accion, $producto)
+    {
+      $this->smarty->assign("producto", $producto);
+      $this->smarty->display($accion .'.tpl');
+    }
+
   function show($accion){
     $this->smarty->display($accion .'.tpl');
   }

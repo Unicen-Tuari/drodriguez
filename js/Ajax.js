@@ -50,4 +50,18 @@ $(document).ready(function(){
         event.preventDefault();
         cargar("juegodados");
     })
+
+    // function createEllipsis ( containerId ) {
+    //     $container = $("#" + containerId);
+    //     var containerHeight = $container.height();
+    //     var $text = $container.find("p");
+    //
+    //     while ( $text.outerHeight() > containerHeight ) {
+    //         $text.text(function (index, text) {
+    //             return text.replace(/\W*\s(\S)*$/, '...');
+    //         });
+    //     }
+    //   }
+    //
+    // createEllipsis("container");
 });

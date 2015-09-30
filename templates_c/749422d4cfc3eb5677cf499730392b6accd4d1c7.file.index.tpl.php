@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-09-26 18:28:18
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-29 01:59:00
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:320645602f600bbfbc6-33442878%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '749422d4cfc3eb5677cf499730392b6accd4d1c7' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1443284896,
+      1 => 1443484737,
       2 => 'file',
     ),
   ),
@@ -108,6 +108,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
     </div> <!--  fin del contenedor -->
+
+
+    <!-- <div id="container">
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div> -->
 
     <footer>
         <div>

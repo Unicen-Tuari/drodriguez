@@ -14,11 +14,6 @@ $(document).ready(function(){
     })
   }
 
-    $("#completo").on("click",function(event){
-        event.preventDefault();
-        cargar("productocompleto");
-    })
-
     $("#admin").on("click",function(event){
         event.preventDefault();
         cargar("admin");

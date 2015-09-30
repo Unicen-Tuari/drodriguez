@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-09-30 02:10:24
-         compiled from ".\templates\productocompleto.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:29332560702c8549ec7-72748930%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-30 02:20:54
+         compiled from ".\templates\ProductoCompleto.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:9386560b289c4a7349-38803007%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '51d7177eaed694cacc8128f88b7e864d005369f6' => 
+    'f3486326ec0042ef12300fa710fae1727137b95b' => 
     array (
-      0 => '.\\templates\\productocompleto.tpl',
-      1 => 1443571818,
+      0 => '.\\templates\\ProductoCompleto.tpl',
+      1 => 1443572449,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '29332560702c8549ec7-72748930',
+  'nocache_hash' => '9386560b289c4a7349-38803007',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_560702c8586dc0_09542286',
+  'unifunc' => 'content_560b289c4e4242_69530522',
   'variables' => 
   array (
     'producto' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_560702c8586dc0_09542286')) {function content_560702c8586dc0_09542286($_smarty_tpl) {?><div class="container">
+<?php if ($_valid && !is_callable('content_560b289c4e4242_69530522')) {function content_560b289c4e4242_69530522($_smarty_tpl) {?><div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 contenedor">
           <ul class="list-group">
@@ -40,6 +40,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <div class="col-md-8 texto">
                   <?php echo $_smarty_tpl->tpl_vars['producto']->value["nombre_prod"];?>
 <br><br>
+                  <?php echo $_smarty_tpl->tpl_vars['producto']->value["descripcion"];?>
+<br><br>
+                  <?php echo $_smarty_tpl->tpl_vars['producto']->value["fk_id_cat"];?>
+
 
                 </div>
 

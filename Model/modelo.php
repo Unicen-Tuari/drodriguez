@@ -28,7 +28,7 @@ class ProductosModel {
     while($producto = $consulta->fetch(PDO::FETCH_ASSOC)) {
       $consultaCategoria = $this->db->prepare("SELECT nombre FROM categoria where id_cat=?");
       $consultaCategoria->execute(array($producto['fk_id_cat']));
-      $categoria_producto = $consultaCategoria->fetchAll()[0];
+      $categoria_producto = $consultaCategoria->fetch();
       $producto['fk_id_cat'] = $categoria_producto['nombre'];
       $consultaImagenes = $this->db->prepare("SELECT * FROM imagen where fk_id_producto=?");
       $consultaImagenes->execute(array($producto['id_prod']));
@@ -39,6 +39,26 @@ class ProductosModel {
 
     return $productos;
   }
+
+  function getProducto($id){
+    $producto= array();
+
+    $consultaProducto = $this->db->prepare("SELECT * FROM producto WHERE id_prod=?");
+    $consultaProducto->execute(array($id));
+    $producto = $consultaProducto->fetch(PDO::FETCH_ASSOC);
+
+    $consultaCategoria = $this->db->prepare("SELECT nombre FROM categoria where id_cat=?");
+    $consultaCategoria->execute(array($producto['fk_id_cat']));
+    $categoria_producto = $consultaCategoria->fetch();
+    $producto['fk_id_cat'] = $categoria_producto['nombre'];
+
+    $consultaImagen = $this->db->prepare("SELECT path FROM imagen WHERE fk_id_producto=?");
+    $consultaImagen->execute(array($id));
+    $imagenes_producto = $consultaImagen->fetchAll(PDO::FETCH_ASSOC)[0];
+    $producto['imagenes'] = $imagenes_producto["path"];
+
+  return $producto;
+}
 
   function getCategorias(){
     $categorias = array();

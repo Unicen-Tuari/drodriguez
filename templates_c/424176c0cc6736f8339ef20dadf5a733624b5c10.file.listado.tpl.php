@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-09-27 21:09:03
+<?php /* Smarty version Smarty-3.1.14, created on 2015-09-30 01:51:38
          compiled from ".\templates\listado.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:50525606ae76e1d029-42025687%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '424176c0cc6736f8339ef20dadf5a733624b5c10' => 
     array (
       0 => '.\\templates\\listado.tpl',
-      1 => 1443380939,
+      1 => 1443570674,
       2 => 'file',
     ),
   ),
@@ -56,7 +56,8 @@ $_smarty_tpl->tpl_vars['imagen']->_loop = true;
 
                 </div>
 
-                <button id="completo" href="#" type="button" name="button">Descripcion Completa</button>
+                <button class="verProducto" href="#" type="button" name="button" value=<?php echo $_smarty_tpl->tpl_vars['producto']->value['id_prod'];?>
+>Descripcion Completa</button>
 
               </li>
             <?php } ?>
@@ -65,6 +66,6 @@ $_smarty_tpl->tpl_vars['imagen']->_loop = true;
     </div>
 </div>
 
-<script src="js/Producto.js"></script>
+<script src="js/ProductoCompleto.js"></script>
 <!-- <a href="#" class="marcasproductos col-lg-3 col-md-3 col-sm-4 col-xs-6"><img src="images/Productos/banner1.gif"/></a> -->
 <?php }} ?>
