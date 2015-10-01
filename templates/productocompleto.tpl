@@ -13,6 +13,7 @@
 
                 <div class="col-md-8 texto">
                   {$producto["nombre_prod"]}<br><br>
+                  <h1>Producto completo</h1>
                   {$producto["descripcion"]}<br><br>
                   {$producto["fk_id_cat"]}
 

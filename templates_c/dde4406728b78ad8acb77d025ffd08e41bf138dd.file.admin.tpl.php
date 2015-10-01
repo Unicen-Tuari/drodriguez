@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-09-30 06:09:31
+<?php /* Smarty version Smarty-3.1.14, created on 2015-10-01 04:18:00
          compiled from ".\templates\admin.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:297935606a6908291f2-28891100%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:10239560c957b7ffdf2-75219556%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'dde4406728b78ad8acb77d025ffd08e41bf138dd' => 
     array (
       0 => '.\\templates\\admin.tpl',
-      1 => 1443586116,
+      1 => 1443665873,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '297935606a6908291f2-28891100',
+  'nocache_hash' => '10239560c957b7ffdf2-75219556',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_5606a690903e28_65978729',
+  'unifunc' => 'content_560c957b82ec02_83551738',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5606a690903e28_65978729')) {function content_5606a690903e28_65978729($_smarty_tpl) {?><html>
+<?php if ($_valid && !is_callable('content_560c957b82ec02_83551738')) {function content_560c957b82ec02_83551738($_smarty_tpl) {?><html>
     <head>
 
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -55,35 +55,26 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   <!-- listo los productos de la base de datos -->
                 </ul>
 
-                  <form id="formproducto">
+                  <form  method="POST" action="index.php?action=addProducto">
                     <div class="form-group">
                       <h4>Nombre del Producto</h4>
-                      <input type="text" class="form-control" id="nombre" name="nombre" >
+                      <input type="text" class="form-control" id="nombreP" name="nombreP" >
                     </div>
                     <div class="form-group">
                       <h4>Descripcion</h4>
-                      <textarea class="form-control" rows="1" id="descripcion" name="descripcion"></textarea>
+                      <textarea class="form-control" rows="1" id="descripcionP" name="descripcionP"></textarea>
                       <!-- <input type="password" class="form-control"> -->
                     </div>
 
                       <div class="form-group">
-                        <select id="categorias" name="categorias">
+                        <select id="categoriasP" name="categoriasP">
 
                         </select>
                       </div>
-                    <!-- <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Categorias <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" id="categorias">
-                       Listo las categorias en el dropdown
-                    </ul> -->
-                    <!-- </div> -->
-                    <div class="form-group">
-                      <br>
-                      <label for="exampleInputFile">Imagen producto</label>
-                      <input type="file" id="exampleInputFile" name="exampleInputFile[]">
-                      <!-- <p class="help-block">Example block-level help text here.</p> -->
-                    </div>
+
+                    <p>Imagen producto</p>
+                    <input type="file" id="imagesToUpload" name="imagesToUpload[]" multiple/>
+
                     <button type="submit" class="btn btn-default">Cargar</button>
                   </form>
 
@@ -94,11 +85,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <!-- Listo las categorias-->
                   </ul>
 
-                  <form id="formcategoria">
+                  <form method="POST" action="index.php?action=addCategoria">
                     <div class="form-group">
                       <h4>Categoria</h4>
                       <input type="text" class="form-control" id="nombre_categoria" name="nombre_categoria">
                     </div>
+                    <input id="imgf" name="imgf[]"  type="file" multiple/>
+
                     <button type="submit" class="btn btn-default">Cargar</button>
                   </form>
 
@@ -109,7 +102,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </div> <!--  fin del contenedor -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/Productos.js"></script>

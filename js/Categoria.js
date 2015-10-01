@@ -39,7 +39,7 @@ $(document).ready(function(){
         dataType: "html",
         url: "index.php?action=" + argument,
         success: function(data){
-            $("#categorias").html(data);
+            $("#categoriasP").html(data);
         },
         error: function(){
             alert("error");
@@ -49,5 +49,5 @@ $(document).ready(function(){
 
   cargar('categoriasDrop');
   cargar1('categoriasListar');
-  
+
 });

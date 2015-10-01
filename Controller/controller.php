@@ -27,11 +27,14 @@
   }
 
 	function agregarCategoria(){
-    $this->model->addCategoria($_REQUEST["nombre_categoria"]);
+		if (isset($_FILES["imgf"])){
+    	$this->model->addCategoria($_REQUEST["nombre_categoria"],$_FILES["imgf"]);
+			}
+		var_dump($_FILES["imgf"]);
   }
 
 	function agregarProducto(){
-		$this->modelo->addProducto($_REQUEST["categorias"], $_REQUEST["nombre"], $_REQUEST["descripcion"], $_FILES["exampleInputFile"]);
+		$this->model->addProducto($_REQUEST["categoriasP"], $_REQUEST["nombreP"], $_REQUEST["descripcionP"], $_FILES["imagesToUpload"]);
   }
 
 	// Mostrar el template que la accion contenga

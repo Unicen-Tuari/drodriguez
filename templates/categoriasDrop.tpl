@@ -5,7 +5,7 @@
   {if !empty($categorias)}
     <option value="0">Categorias</option>
     {foreach $categorias as $key=>$categoria}
-      <option value="$categoria['id_cat']">
+      <option value="{$categoria['id_cat']}">
       {$categoria['nombre']}
       </option>
     {/foreach}

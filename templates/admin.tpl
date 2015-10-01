@@ -34,35 +34,26 @@
                   <!-- listo los productos de la base de datos -->
                 </ul>
 
-                  <form id="formproducto">
+                  <form  method="POST" action="index.php?action=addProducto">
                     <div class="form-group">
                       <h4>Nombre del Producto</h4>
-                      <input type="text" class="form-control" id="nombre" name="nombre" >
+                      <input type="text" class="form-control" id="nombreP" name="nombreP" >
                     </div>
                     <div class="form-group">
                       <h4>Descripcion</h4>
-                      <textarea class="form-control" rows="1" id="descripcion" name="descripcion"></textarea>
+                      <textarea class="form-control" rows="1" id="descripcionP" name="descripcionP"></textarea>
                       <!-- <input type="password" class="form-control"> -->
                     </div>
 
                       <div class="form-group">
-                        <select id="categorias" name="categorias">
+                        <select id="categoriasP" name="categoriasP">
 
                         </select>
                       </div>
-                    <!-- <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Categorias <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" id="categorias">
-                       Listo las categorias en el dropdown
-                    </ul> -->
-                    <!-- </div> -->
-                    <div class="form-group">
-                      <br>
-                      <label for="exampleInputFile">Imagen producto</label>
-                      <input type="file" id="exampleInputFile" name="exampleInputFile[]">
-                      <!-- <p class="help-block">Example block-level help text here.</p> -->
-                    </div>
+
+                    <p>Imagen producto</p>
+                    <input type="file" id="imagesToUpload" name="imagesToUpload[]" multiple/>
+
                     <button type="submit" class="btn btn-default">Cargar</button>
                   </form>
 
@@ -73,11 +64,13 @@
                     <!-- Listo las categorias-->
                   </ul>
 
-                  <form id="formcategoria">
+                  <form method="POST" action="index.php?action=addCategoria">
                     <div class="form-group">
                       <h4>Categoria</h4>
                       <input type="text" class="form-control" id="nombre_categoria" name="nombre_categoria">
                     </div>
+                    <input id="imgf" name="imgf[]"  type="file" multiple/>
+
                     <button type="submit" class="btn btn-default">Cargar</button>
                   </form>
 
@@ -88,7 +81,7 @@
     </div> <!--  fin del contenedor -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/Productos.js"></script>
