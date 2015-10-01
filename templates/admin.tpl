@@ -34,7 +34,7 @@
                   <!-- listo los productos de la base de datos -->
                 </ul>
 
-                  <form  method="POST" action="index.php?action=addProducto">
+                  <form  id="formproducto">
                     <div class="form-group">
                       <h4>Nombre del Producto</h4>
                       <input type="text" class="form-control" id="nombreP" name="nombreP" >
@@ -51,7 +51,7 @@
                         </select>
                       </div>
 
-                    <p>Imagen producto</p>
+                    <label>Imagen producto</label>
                     <input type="file" id="imagesToUpload" name="imagesToUpload[]" multiple/>
 
                     <button type="submit" class="btn btn-default">Cargar</button>
@@ -64,13 +64,11 @@
                     <!-- Listo las categorias-->
                   </ul>
 
-                  <form method="POST" action="index.php?action=addCategoria">
+                  <form id="formcategoria">
                     <div class="form-group">
                       <h4>Categoria</h4>
                       <input type="text" class="form-control" id="nombre_categoria" name="nombre_categoria">
                     </div>
-                    <input id="imgf" name="imgf[]"  type="file" multiple/>
-
                     <button type="submit" class="btn btn-default">Cargar</button>
                   </form>
 

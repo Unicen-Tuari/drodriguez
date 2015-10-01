@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-10-01 04:18:00
+<?php /* Smarty version Smarty-3.1.14, created on 2015-10-01 04:32:29
          compiled from ".\templates\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:10239560c957b7ffdf2-75219556%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dde4406728b78ad8acb77d025ffd08e41bf138dd' => 
     array (
       0 => '.\\templates\\admin.tpl',
-      1 => 1443665873,
+      1 => 1443666744,
       2 => 'file',
     ),
   ),
@@ -55,7 +55,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   <!-- listo los productos de la base de datos -->
                 </ul>
 
-                  <form  method="POST" action="index.php?action=addProducto">
+                  <form  id="formproducto">
                     <div class="form-group">
                       <h4>Nombre del Producto</h4>
                       <input type="text" class="form-control" id="nombreP" name="nombreP" >
@@ -72,7 +72,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         </select>
                       </div>
 
-                    <p>Imagen producto</p>
+                    <label>Imagen producto</label>
                     <input type="file" id="imagesToUpload" name="imagesToUpload[]" multiple/>
 
                     <button type="submit" class="btn btn-default">Cargar</button>
@@ -85,13 +85,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <!-- Listo las categorias-->
                   </ul>
 
-                  <form method="POST" action="index.php?action=addCategoria">
+                  <form id="formcategoria">
                     <div class="form-group">
                       <h4>Categoria</h4>
                       <input type="text" class="form-control" id="nombre_categoria" name="nombre_categoria">
                     </div>
-                    <input id="imgf" name="imgf[]"  type="file" multiple/>
-
                     <button type="submit" class="btn btn-default">Cargar</button>
                   </form>
 

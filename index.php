@@ -26,7 +26,7 @@
     $Top_Controler->agregarCategoria();
   }
   elseif ($_REQUEST[RouterConfig::$ACTION]=="addProducto"){
-    $Top_Controler->agregarProducto($_FILES["imagesToUpload"]);
+    $Top_Controler->agregarProducto();//$_FILES["imagesToUpload"]);
   }
   else
   {
