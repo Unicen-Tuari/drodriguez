@@ -31,7 +31,7 @@
   }
 
 	function agregarProducto(){
-		 $this->model->addProducto($_REQUEST["categoriasP"], $_REQUEST["nombreP"], $_REQUEST["descripcionP"]);//, $_FILES["imagesToUpload"]);
+		 $this->model->addProducto($_REQUEST["categoriasP"], $_REQUEST["nombreP"], $_REQUEST["descripcionP"], $_FILES["imagesToUpload"]);
   }
 
 	// Mostrar el template que la accion contenga

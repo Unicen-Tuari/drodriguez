@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
   $("#formproducto").submit(function(event){
+    //console.log("test");
   event.preventDefault();
       $.ajax({
           url: "index.php?action=addProducto",
@@ -8,7 +9,9 @@ $(document).ready(function(){
           data: new FormData(this),
           contentType : false,
           processData : false,
-          success: function(){
+          success: function(data){
+            // console.log(data);
+            // return;
             cargar('admin');
           },
           error:function(){

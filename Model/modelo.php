@@ -9,16 +9,16 @@ class ProductosModel {
       $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   }
 
-  // private function subirImagenes($imagenes){
-  //   $carpeta = "uploads/imagenes/";
-  //   $destinos_finales = array();
-  //   foreach ($imagenes["tmp_name"] as $key => $value) {
-  //     $destinos_finales[] = $carpeta.uniqid().$imagenes["name"][$key];
-  //     move_uploaded_file($value, end($destinos_finales));
-  //   }
-  //
-  //   return $destinos_finales;
-  // }
+  private function subirImagenes($imagenes){
+    $carpeta = "uploads/imagenes/";
+    $destinos_finales = array();
+    foreach ($imagenes["tmp_name"] as $key => $value) {
+      $destinos_finales[] = $carpeta.uniqid().$imagenes["name"][$key];
+      move_uploaded_file($value, end($destinos_finales));
+    }
+
+    return $destinos_finales;
+  }
 
   function getProductos(){
     $productos = array();
@@ -88,19 +88,19 @@ class ProductosModel {
 }
 
 
-  function addProducto($categoria, $nombre, $descripcion){ //,$imagenes){
+  function addProducto($categoria, $nombre, $descripcion, $imagenes){
         try{
-          //$destinos_finales=$this->subirImagenes($imagenes);
+          $destinos_finales=$this->subirImagenes($imagenes);
 
           $this->db->beginTransaction();
           $consulta = $this->db->prepare('INSERT INTO producto(nombre_prod, descripcion, fk_id_cat) VALUES(?,?,?)');
           $consulta->execute(array($nombre, $descripcion, $categoria));
           $id_producto = $this->db->lastInsertId(); //ultimo id del elemento agregado
 
-          // foreach ($destinos_finales as $key => $value) {
-          //   $consulta = $this->db->prepare('INSERT INTO imagen(fk_id_producto, path) VALUES(?,?)');
-          //   $consulta->execute(array($id_producto, $value));
-          // }
+          foreach ($destinos_finales as $key => $value) {
+            $consulta = $this->db->prepare('INSERT INTO imagen(fk_id_producto, path) VALUES(?,?)');
+            $consulta->execute(array($id_producto, $value));
+          }
           $this->db->commit();
         }
           catch(Exception $e){
