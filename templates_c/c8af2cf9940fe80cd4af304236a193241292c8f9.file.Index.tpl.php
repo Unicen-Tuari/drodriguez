@@ -1,4 +1,25 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.14, created on 2016-10-12 01:38:07
+         compiled from ".\templates\Index.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:63457fd77df461f39-23190470%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'c8af2cf9940fe80cd4af304236a193241292c8f9' => 
+    array (
+      0 => '.\\templates\\Index.tpl',
+      1 => 1476223958,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '63457fd77df461f39-23190470',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_57fd77df634595_84959868',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_57fd77df634595_84959868')) {function content_57fd77df634595_84959868($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <link href="images/Caja%20Logo.ico" rel="shortcut icon" />
 <head>
@@ -105,3 +126,4 @@
 <script src="js/Ajax.js"></script>
 </body>
 </html>
+<?php }} ?>

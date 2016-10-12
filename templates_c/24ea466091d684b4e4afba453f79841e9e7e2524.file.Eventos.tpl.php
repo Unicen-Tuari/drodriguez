@@ -1,4 +1,25 @@
-<div class="container">
+<?php /* Smarty version Smarty-3.1.14, created on 2016-10-12 01:40:59
+         compiled from ".\templates\Eventos.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:818557fd788bbc5861-28273333%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '24ea466091d684b4e4afba453f79841e9e7e2524' => 
+    array (
+      0 => '.\\templates\\Eventos.tpl',
+      1 => 1435151938,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '818557fd788bbc5861-28273333',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_57fd788bbf3a94_38643164',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_57fd788bbf3a94_38643164')) {function content_57fd788bbf3a94_38643164($_smarty_tpl) {?><div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1 contenedor">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec dolor ex. Maecenas et sem maximus, accumsan ante quis, luctus augue. Vestibulum aliquam nulla et lacus consectetur aliquam. Maecenas efficitur viverra dui a scelerisque. Donec massa elit, laoreet pretium consectetur id, maximus quis est. Donec non mi in lorem euismod bibendum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut sagittis ipsum eget lectus pharetra auctor. Sed vel tellus dapibus, sagittis lorem vitae, pretium elit. Vestibulum facilisis urna id blandit porta. Duis eu nibh in est eleifend pretium et nec mauris. Phasellus pretium, eros quis tempus interdum, leo lectus condimentum arcu, et aliquet sapien felis eu nisi. Fusce fringilla sem molestie pharetra sodales. Vivamus mi nisi, imperdiet non purus sed, vulputate porta libero. Proin elementum feugiat nisl, sit amet consectetur erat tristique id. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -15,3 +36,4 @@
 
 
 
+<?php }} ?>

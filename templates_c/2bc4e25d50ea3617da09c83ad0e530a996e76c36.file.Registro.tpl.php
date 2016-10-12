@@ -1,4 +1,25 @@
-<div class="container">
+<?php /* Smarty version Smarty-3.1.14, created on 2016-10-12 01:41:00
+         compiled from ".\templates\Registro.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:3215957fd788cc6dcb6-41270034%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '2bc4e25d50ea3617da09c83ad0e530a996e76c36' => 
+    array (
+      0 => '.\\templates\\Registro.tpl',
+      1 => 1435151938,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '3215957fd788cc6dcb6-41270034',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_57fd788cc9ca88_68744707',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_57fd788cc9ca88_68744707')) {function content_57fd788cc9ca88_68744707($_smarty_tpl) {?><div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 contenedor">
             <form role="form">
@@ -55,3 +76,4 @@
         </div>
     </div>
 </div>
+<?php }} ?>

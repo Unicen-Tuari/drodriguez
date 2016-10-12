@@ -1,4 +1,25 @@
-<div class="container">
+<?php /* Smarty version Smarty-3.1.14, created on 2016-10-12 01:41:00
+         compiled from ".\templates\Productos.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1107057fd788c488a88-83140343%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '253038d6931da5ecafc0c8ed6eb5f7ac399bc00f' => 
+    array (
+      0 => '.\\templates\\Productos.tpl',
+      1 => 1476225427,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '1107057fd788c488a88-83140343',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_57fd788c4bb029_23649836',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_57fd788c4bb029_23649836')) {function content_57fd788c4bb029_23649836($_smarty_tpl) {?><div class="container">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 contenedor">
             <div class=" row">
@@ -64,3 +85,4 @@
     </div>
 </div>
 <script src="js/Rest.js"></script>
+<?php }} ?>

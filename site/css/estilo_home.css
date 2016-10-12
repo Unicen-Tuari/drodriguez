@@ -1,0 +1,350 @@
+/*-------------------------------HEADER----------------------------------*/
+header{
+    height: 150px;
+    width: 900px;
+    margin: auto auto;
+    background-color: black;
+    /*background: rgba(255, 255, 255, 1);*/
+}
+
+header tr td a{
+    text-decoration: none;
+    color:#00ff00;
+}
+
+header label{
+    color: #6aa444;
+}
+
+header form{
+    float: right;
+}
+
+header img{
+    float: right;
+    width: 3%;
+}
+
+.headerimglogo{
+    width: 20%;
+    float: left;
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    height: 27px;
+    width: 898px;
+    /*background: rgba(200, 54, 54, 1);*/
+    margin-top: -15px;
+    background-color: #6aa444;
+}
+
+nav a{
+    text-decoration: none;
+    /*padding-right: 72px;
+    padding-left: 71px;*/
+    font-size: 22px;
+    color: white;
+}
+
+nav ul{
+    /*-webkit-padding-start: 0px;
+    -moz-padding-start: 0px;*/
+    padding: 0;
+}
+
+nav ul li:hover{
+    background-color: #0b2310;
+    color: white;
+}
+
+nav ul li{
+    float: left;
+    list-style-type: none;
+    width: 177px;
+    text-align: center;
+    border: 1px solid #0b2310;
+}
+
+.liregistromaslargo{
+    width: 180px;
+}
+
+div p{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/*-------------------------------ESTILO HOME----------------------------------*/
+
+.home{
+    float: left;
+    width: 153px;
+    height: 200px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.home img{
+    height: 50%;
+    border: 4px solid #6aa444;
+    border-radius: 20px;
+}
+
+.divhome{
+    background-color: grey;
+    height: 709px;
+    width: 898px;
+    /*width: 898px;*/
+    margin: auto auto;
+    border-radius: 10px;
+}
+
+.divotros{
+    background-color: white;
+    height: 709px;
+    width: 898px;
+    margin: auto auto;
+    border-radius: 10px;
+}
+
+.divdentrodeotro{
+    float: right;
+    height: 50px;
+    width: 200px;
+}
+
+.sectionhome{
+    height: 220px;
+}
+
+a img{
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+
+}
+
+ul li{
+    list-style-type: none;
+    color: black;
+}
+
+article{
+    height: 680px;
+    width: 550px;
+    background-color: white;
+    margin: auto auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    float: left;
+    border-radius: 10px;
+    /*border: 5px solid black;*/
+}
+
+/*-------------------------------ASIDE----------------------------------*/
+
+aside{
+    float: right;
+    width: 300px;
+    height: 650px;
+    margin-right: 24px;
+    margin-top: 15px;
+    /*border: 5px solid black;*/
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+aside div{
+    width: 300px;
+    margin-right: 28px;
+    height: 97px;
+}
+
+aside div:hover {
+    background-color: black;
+}
+
+aside div h1{
+    text-align: center;
+    /*width: 300px;*/
+    /*border: 5px solid yellow;*/
+}
+
+aside div a{
+    margin-top: 38px;
+    margin-left: 4px;
+    float: left;
+    text-decoration: none;
+    color: #6aa444;
+    font-size: 20px;
+}
+
+aside div img{
+    float: left;
+    margin-top: 38px;
+    margin-left: 90px;
+}
+
+/*-------------------------------REGISTRO----------------------------------*/
+
+form p{
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.formEstilo{
+    font-weight: bold;
+    margin: 16px auto auto;
+    height: 440px;
+    width: 600px;
+    border: 5px solid green;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #3d8e00;
+}
+
+.labelregistro{
+    padding-top: 10px;
+    padding-left: 0px;
+    color: grey;
+}
+
+.imputenviar{
+    float: right;
+    margin-right: 10px;
+    margin-top: -15px;
+}
+
+/*-------------------------------CIRCUITOS----------------------------------*/
+
+.columnabusqueda{
+    width: 220px;
+    height: 682px;
+    background-color: white;
+    margin: auto auto;
+    float: left;
+    border-right: 1px solid #6aa444;
+}
+
+.circuito{
+    float: left;
+    height: 280px;
+    width: 675px;
+    border-bottom: 2px dashed #6aa444;
+    overflow-x: hidden;
+}
+
+.listacircuitos{
+    overflow-x: hidden;
+    height: 675px;
+    margin-top: 1px;
+    /*overflow-y: hidden;*/
+}
+
+.sinbordeultimocircuito{
+    float: right;
+    height: 240px;
+    width: 610px;
+}
+
+.imgcircuito{
+    float: left;
+    width: 140px;
+    height: 130px;
+}
+
+form a{
+    text-decoration: none;
+    color:black;
+}
+
+/*-------------------------------PRODUCTOS----------------------------------*/
+
+.transparencia{
+    opacity: 0.5;
+}
+
+.marcasproductos{
+    float: left;
+}
+
+.marcasproductos img{
+    height: 95px;
+    opacity: 0.5;
+    border: 2px solid transparent;
+}
+
+.marcasproductos img:hover{
+    border: 2px solid #6aa444;
+    opacity: 1;
+}
+
+.sectionproducto{
+    height: 515px;
+}
+
+aside td img{
+    height: 50px;
+    width: 50px;
+}
+
+aside td {
+    text-align: center;
+}
+
+.parfilatabla{
+    background-color: white;
+}
+
+table, th, td{
+    border-collapse: collapse;
+}
+
+.textocircuitos{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/*-------------------------------FOOTER----------------------------------*/
+
+footer {
+    margin: auto auto;
+    width: 900px;
+    height: 35px;
+    /*float: right;*/
+    clear: both;
+}
+
+footer ul li{
+    float: left;
+    color: #6aa444;
+    padding: 0 46px 0 46px;
+    border-right: 1px solid;
+    margin: 3px 0 3px 0;
+}
+
+footer div{
+    margin-top: -15.5px;
+    height: 35px;
+    width: 899px;
+}
+
+.sinbordeultimo{
+    border: none;
+}
+
+/*
+audio{
+    margin-left: 530px;
+}*/

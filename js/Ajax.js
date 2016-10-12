@@ -1,67 +1,47 @@
 $(document).ready(function(){
-
-  function cargar(argument) {
-    $.ajax({
-        type: "GET",
-        dataType: "html",
-        url: "index.php?action=" + argument,
-        success: function(data){
-            $("#contenido").html(data);
-        },
-        error: function(){
-            alert("error");
-        }
-    })
-  }
-
-    cargar("home");
-
     $("#circuitos").on("click",function(event){
         event.preventDefault();
-        cargar("circuitos");
+        cargar("Circuitos");
     })
 
     $("#home").on("click",function(event){
         event.preventDefault();
-        cargar("home");
+        cargar("Home");
     })
 
-    $("#registro").on("click",function(event){
+    function cargar(template){
+      $.ajax({
+          type: "GET",
+          dataType: "html",
+          url: "index.php?nav="+template+".tpl",
+          success: function(data){
+              $("#contenido").html(data);
+          },
+          error: function(){
+              alert("error");
+          }
+      })
+    }
+
+    $("#eventos").on("click",function(event){
         event.preventDefault();
-        cargar("registro");
+        cargar("Eventos");
     })
 
     $("#productos").on("click",function(event){
         event.preventDefault();
-        cargar("productos");
+        cargar("Productos");
     })
 
-    $("#eventos").on("click",function(event){
+    $("#registro").on("click",function(event){
         event.preventDefault();
-        cargar("eventos");
+        cargar("Registro");
     })
 
-    $("#listado").on("click",function(event){
-        event.preventDefault();
-        cargar("listado");
-    })
+    cargar("Home");
 
     $("#juego").on("click",function(event){
         event.preventDefault();
-        cargar("juegodados");
+        cargar("JuegodeDados");
     })
-
-    // function createEllipsis ( containerId ) {
-    //     $container = $("#" + containerId);
-    //     var containerHeight = $container.height();
-    //     var $text = $container.find("p");
-    //
-    //     while ( $text.outerHeight() > containerHeight ) {
-    //         $text.text(function (index, text) {
-    //             return text.replace(/\W*\s(\S)*$/, '...');
-    //         });
-    //     }
-    //   }
-    //
-    // createEllipsis("container");
 });

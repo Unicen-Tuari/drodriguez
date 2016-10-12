@@ -1,4 +1,25 @@
-<div class="container">
+<?php /* Smarty version Smarty-3.1.14, created on 2016-10-12 01:40:58
+         compiled from ".\templates\Circuitos.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2220857fd788aeee720-09044266%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '0ba2d4ec87cff462cd1d11681ee877211aea0484' => 
+    array (
+      0 => '.\\templates\\Circuitos.tpl',
+      1 => 1435151938,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2220857fd788aeee720-09044266',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_57fd788af25237_55920499',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_57fd788af25237_55920499')) {function content_57fd788af25237_55920499($_smarty_tpl) {?><div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1 col-sm-12 contenedor">
             <div class="row busquedaycircuitos ">
@@ -85,4 +106,4 @@
             </div>
         </div>
     </div>
-</div>
+</div><?php }} ?>
