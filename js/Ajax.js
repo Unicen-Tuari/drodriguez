@@ -13,7 +13,7 @@ $(document).ready(function(){
       $.ajax({
           type: "GET",
           dataType: "html",
-          url: "index.php?nav="+template+".tpl",
+          url: "index.php?nav="+template,
           success: function(data){
               $("#contenido").html(data);
           },
